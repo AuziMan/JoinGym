@@ -13,7 +13,7 @@
         <!-- Styles -->
         <style>
             html, body {
-                background: url("/images/backgroundimg.jpg");
+                background: url("/images/bluebg.jpg");
 
                 /**background-color: #fff;**/
                 color: #636b6f;
