@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-        background: url("/images/backgroundimg.jpg");
 
     <head>
         <meta charset="utf-8">
@@ -14,7 +13,9 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
+                background: url("/images/backgroundimg.jpg");
+
+                /**background-color: #fff;**/
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
