@@ -16,7 +16,7 @@
                 /*background: url("/images/bluebg.jpg");*/
 
                 background-color: #1F61AB;
-                color: #636b6f;
+                color: black;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 height: 100vh;
