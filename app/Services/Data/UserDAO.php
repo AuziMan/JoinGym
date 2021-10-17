@@ -19,7 +19,7 @@ class UserDAO
     private $password = "c57b0016";
     private $dbname = "heroku_12aabf505a962a1";
     private $dbquery;
-    private $port = 8889;
+    private $port = 8888;
     
     public function __construct()
     {
