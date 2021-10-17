@@ -45,7 +45,7 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'url' => env('DATABASE_URL'),
+            'url' => env('mysql://b0c8d84461c422:c57b0016@us-cdbr-east-04.cleardb.com/heroku_12aabf505a962a1?reconnect=true'),
             'host' => env('DB_HOST', 'us-cdbr-east-04.cleardb.com'),
             'port' => env('DB_PORT', '3306'),
             'database' => env('DB_DATABASE', 'heroku_12aabf505a962a1'),
