@@ -14,10 +14,10 @@ class UserDAO
 {
     // Define conn string
     private $conn;
-    private $servername = "localhost";
-    private $username = "root";
-    private $password = "root";
-    private $dbname = "cst-256";
+    private $servername = "us-cdbr-east-04.cleardb.com";
+    private $username = "b0c8d84461c422";
+    private $password = "c57b0016";
+    private $dbname = "heroku_12aabf505a962a1";
     private $dbquery;
     private $port = 8889;
     
