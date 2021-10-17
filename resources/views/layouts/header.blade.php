@@ -1,3 +1,3 @@
 <html>
-	<h2 style="margin-left: 30px">CLC Laravel Project</h2>
+	<h2 style="margin-left: 30px"></h2>
 </html>
