@@ -9,70 +9,70 @@ namespace App\Models;
 class UserPortfolioModel
 {
 
-    public $jobHistory;
+    public $gymGoals;
 
-    public $jobSkills;
+    public $gymExperience;
 
-    public $education;
+    public $workoutPrefrence;
 
-    public function __construct($jobSkills, $jobHistory, $education)
+    public function __construct($gymGoals, $gymExperience, $workoutPrefrence)
     {
-        $this->jobSkills = $jobSkills;
-        $this->jobHistory = $jobHistory;
-        $this->education = $education;
+        $this->gymGoals = $gymGoals;
+        $this->gymExperience = $gymExperience;
+        $this->workoutPrefrence = $workoutPrefrence;
     }
 
     /**
      *
      * @return mixed
      */
-    public function getJobHistory()
+    public function getgymGoals()
     {
-        return $this->jobHistory;
+        return $this->gymGoals;
     }
 
     /**
      *
      * @return mixed
      */
-    public function getJobSkills()
+    public function getgymExperience()
     {
-        return $this->jobSkills;
+        return $this->gymExperience;
     }
 
     /**
      *
      * @return mixed
      */
-    public function getEducation()
+    public function getworkoutPrefrence()
     {
-        return $this->education;
+        return $this->workoutPrefrence;
     }
 
     /**
      *
      * @param mixed $jobHistory
      */
-    public function setJobHistory($jobHistory)
+    public function setgymGoals()
     {
-        $this->jobHistory = $jobHistory;
+        return $this->gymGoals;
     }
 
     /**
      *
-     * @param mixed $jobSkills
+     * @return mixed
      */
-    public function setJobSkills($jobSkills)
+    public function setgymExperience()
     {
-        $this->jobSkills = $jobSkills;
+        return $this->gymExperience;
     }
 
     /**
      *
-     * @param mixed $education
+     * @return mixed
      */
-    public function setEducation($education)
+    public function setworkoutPrefrence()
     {
-        $this->education = $education;
+        return $this->workoutPrefrence;
     }
 }

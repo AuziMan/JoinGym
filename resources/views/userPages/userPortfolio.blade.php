@@ -3,48 +3,48 @@
 	<div class="row justify-content-center">
 		<div class="col-md-8">
 			<div class="card">
-				<div class="card-header">{{ __('Create Your User Portfolio To Show Potential Employers!') }}</div>
+				<div class="card-header">{{ __('Fill out the questions below to find good gym partner matches!') }}</div>
 
 				<div class="card-body">
 					<form method="POST" action="addUserPortfolio">
 						{{csrf_field()}}
 
 						<div class="form-group row">
-							<label for="name" class="col-md-4 col-form-label text-md-right">
-							{{__('Job History') }}</label>
+							<label for="name" class="col-md-4 col-form-label text-md-left">
+							{{__('Goals for the gym') }}</label>
 
 							<div class="col-md-6">
-								<input id="jobHistory" type="text"
+								<input id="gymGoals" type="text"
 									class="form-control @error('name') is-invalid @enderror"
-									name="jobHistory" value="{{ old('jobHistory') }}" required autocomplete="joHhistory"
-									autofocus> @error('jobHistory') <span class="invalid-feedback"
+									name="gymGoals" value="{{ old('gymGoals') }}" required autocomplete="joHhistory"
+									autofocus> @error('gymGoals') <span class="invalid-feedback"
 									role="alert"> <strong>{{ $message }}</strong>
 								</span> @enderror
 							</div>
 						</div>
 
 						<div class="form-group row">
-							<label for="name" class="col-md-4 col-form-label text-md-right">
-							{{__('Job Skills') }}</label>
+							<label for="name" class="col-md-4 col-form-label text-md-left">
+							{{__('How many years have you been working out?') }}</label>
 
 							<div class="col-md-6">
-								<input id="jobSkills" type="text"
+								<input id="gymExperience" type="text"
 									class="form-control @error('name') is-invalid @enderror"
-									name="jobSkills" value="{{ old('jobSkills') }}" required autocomplete="jobSkills"
-									autofocus> @error('jobSkills') <span class="invalid-feedback"
+									name="gymExperience" value="{{ old('gymExperience') }}" required autocomplete="jobSkills"
+									autofocus> @error('gymExperience') <span class="invalid-feedback"
 									role="alert"> <strong>{{ $message }}</strong>
 								</span> @enderror
 							</div>
 						</div>
 						
 						<div class="form-group row">
-							<label for="education" class="col-md-4 col-form-label text-md-right">
-							{{__('Education') }}</label>
+							<label for="workoutPrefrence" class="col-md-4 col-form-label text-md-left">
+							{{__('Do you prefer working out alone, or with others?') }}</label>
 							<div class="col-md-6">
-								<input id="education" type="text"
-									class="form-control @error('education') is-invalid @enderror"
-									name="education" value="{{ old('education') }}" required autocomplete="education"
-									autofocus> @error('education') <span class="invalid-feedback"
+								<input id="workoutPrefrence" type="text"
+									class="form-control @error('workoutPrefrence') is-invalid @enderror"
+									name="workoutPrefrence" value="{{ old('workoutPrefrence') }}" required autocomplete="education"
+									autofocus> @error('workoutPrefrence') <span class="invalid-feedback"
 									role="alert"> <strong>{{ $message }}</strong>
 								</span> @enderror
 							</div>

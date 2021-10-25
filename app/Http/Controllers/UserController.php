@@ -47,16 +47,16 @@ class UserController extends Controller
     {
         $id = Auth::user()->id;
         
-        $jobSkills = request()->get('jobSkills');
-        $jobHistory = request()->get('jobHistory');
-        $education = request()->get('education');
-        $temp = new UserPortfolioModel($jobSkills, $jobHistory, $education);
+        $gymGoals = request()->get('gymGoals');
+        $gymExperience = request()->get('gymExperience');
+        $workoutPrefrence = request()->get('workoutPrefrence');
+        $temp = new UserPortfolioModel($gymGoals, $gymExperience, $workoutPrefrence);
         
         $bs = new UserBS();
         $bs->addUserPortfolio($temp, $id);
         
         $portfolio = $bs->getUserPortfolio($id);
-        return View('/displayUserPortfolio')->with('portfolio', $portfolio);
+        return View('/userPages/displayUserPortfolio')->with('portfolio', $portfolio);
        
     }
     

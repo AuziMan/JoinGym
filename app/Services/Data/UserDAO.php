@@ -14,12 +14,12 @@ class UserDAO
 {
     // Define conn string
     private $conn;
-    private $servername = "us-cdbr-east-04.cleardb.com";
-    private $username = "b0c8d84461c422";
-    private $password = "c57b0016";
-    private $dbname = "heroku_12aabf505a962a1";
+    private $servername = "localhost";
+    private $username = "root";
+    private $password = "root";
+    private $dbname = "JoinGym";
     private $dbquery;
-    private $port = 3301;
+    private $port = 8889;
     
     public function __construct()
     {
@@ -208,12 +208,11 @@ class UserDAO
     {
         try
         {
-            $values = (['userID'=> $id, 'jobSkills'=> $port->jobSkills, 'jobHistory'=> $port->jobHistory, 'education'=> $port->education]);
+            $values = (['userID'=> $id, 'gymGoals'=> $port->gymGoals, 'gymExperience'=> $port->gymExperience, 'workoutPrefrence'=> $port->workoutPrefrence]);
             $result = DB::table('userportfolio')->insert($values);
             
             echo $result;
             // If the selected query returns a result set
-            
             
             if($result > 0)
             {
@@ -241,11 +240,11 @@ class UserDAO
             
             $UserPortfolio = DB::table('userportfolio')->where('userID', $id)->first();
             
-            $jobSkills = $UserPortfolio->jobSkills;
-            $jobHistory = $UserPortfolio->jobHistory;
-            $education = $UserPortfolio->education;
+            $gymGoals = $UserPortfolio->gymGoals;
+            $gymExperience = $UserPortfolio->gymExperience;
+            $workoutPrefrence = $UserPortfolio->workoutPrefrence;
             
-            $temp = new UserPortfolioModel($jobSkills, $jobHistory, $education);
+            $temp = new UserPortfolioModel($gymGoals, $gymExperience, $workoutPrefrence);
             
             return $temp;
         }

@@ -19,7 +19,7 @@ class GroupDAO
     private $servername = "localhost";
     private $username = "root";
     private $password = "root";
-    private $dbname = "cst-256";
+    private $dbname = "JoinGym";
     private $dbquery;
     private $port = 8889;
     

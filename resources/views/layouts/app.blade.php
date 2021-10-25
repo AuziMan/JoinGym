@@ -68,7 +68,7 @@
                             @endif
                             @if(Auth::user()->role == 'customer')
                             <li class="nav-item">
-                            	<a class="nav-link" href="#">{{__('View Profile')}}</a>
+                            	<a class="nav-link" href="userProfile">{{__('View Profile')}}</a>
                             </li>
                             <li class="nav-item">
                             	<input type="hidden" value="{{Auth::user()->id}}" name="id" id="id">
