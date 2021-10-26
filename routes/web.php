@@ -123,8 +123,9 @@ Route::post('/editGroup', 'AdminController@editGroup');
 
 Route::post('/deleteGroup', 'AdminController@deleteGroup');
 
-Route::get('/groups', 'GroupController@userGroupView' );
+Route::get('/groups', 'GroupController@userGroupView');
 
 Route::post('/joinGroup', 'GroupController@joinGroup');
 
 Route::post('/leaveGroup', 'GroupController@leaveGroup');
+

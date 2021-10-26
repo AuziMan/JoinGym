@@ -43,7 +43,7 @@ class GroupController extends Controller
 			$newGroup = new GroupModel($groupID, $groupName, $interest, $type, $memberCount, $description, $exists);
 			array_push($groups, $newGroup);
 		}
-		return view('groupPages/groupUserView')->with('groups', $groups);
+		return view('/groupPages/groupUserView')->with('groups', $groups);
 	}
 	
 	//User join group

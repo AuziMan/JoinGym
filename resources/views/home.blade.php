@@ -1,39 +1,57 @@
 @extends('layouts.app')
 
 @section('content')
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html {
+            background: url("/images/gym.jpg");
+        }
+</style>
+</head>
 <body>
-
-    <div class="container">
+<div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">A little about me</div>
-                        <div class="card-body">
-                        @if (session('status'))
-                            <div class="alert alert-success" role="alert">
-                                {{ session('status') }}
-                            </div>
-                        @endif
-
-                        <div class="colsm-6 colmd-5 col-lg-4 item">
-                            <div class="box">
-                                <img class= "Soccer picture" src="/images/soccerpicture.jpg" width="200" height="200"/>
-                                <h3 class="intro"> Sports have always been a big part of my life.</h3>
-                                <p class="description"> Growing up I played alot of baseball and swam for the state of Kansas</p>
-
-                            </div>
-                        </div>
-                        <div class="colsm-6 colmd-5 col-lg-4 item">
-                            <div class="box">
-                                <h3 class="intro"> Sports have always been a big part of my life.</h3>
-                                <p class="description"> Growing up I played alot of baseball and swam for the state of Kansas</p>
-                            </div>
-                        </div>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr></tr>
+                    </thead>
+                    <tbody>
+                        <tr></tr>
+                        <tr>
+                        <td></td>
+                        </tr>
+                    </tboyd> 
+                </table>               
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h1>Container1</h1>
+                    </div>
+                    <div class="col-md-3">
+                        <h1>Container2</h1>
+                    </div>
+                    <div class="col-md-3">
+                        <h1>Container3</h1>
+                    </div>
+                    <div class="col-md-3">
+                        <h1>Container4</h1>
                     </div>
                 </div>
-            </div>
+            </div>   
         </div>
     </div>
+    
 </body>
+</html>
+
+
+
 
 @endsection

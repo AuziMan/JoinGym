@@ -81,7 +81,7 @@
                             	<a class="nav-link" href="userPortfolio">{{__('User Portfolio')}}</a>
                             </li>
                              <li class="nav-item">
-                            	<a class="nav-link" href="groupUserView">{{__('Groups')}}</a>
+                            	<a class="nav-link" href="groups">{{__('Groups')}}</a>
                             </li>
                             @endif
                             <li class="nav-item dropdown">
