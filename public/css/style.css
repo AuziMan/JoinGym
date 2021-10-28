@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    width: 1170;
+    margin:auto;
+}
+
+header{
+    background-image: url(images/gymbg.jpg);
+    height: 100vh;
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-position: center center;
+    position: relative;
+}
+
+
+        ul 
+        {
+            list-style-type: none;
+        }   
+

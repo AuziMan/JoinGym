@@ -16,17 +16,18 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
-    <!-- Styles -->
+    <!-- Styles-->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <style>
+        ul 
+        {
+            list-style-type: none;
+        }   
 
+        
+    </style>
 
-
-
-
-
-</style>
    
 
     
