@@ -59,6 +59,13 @@ class UserBS
         
         return $this->service->getUserPortfolio($id);
     }
+
+    public function getUserProfile($id)
+    {
+        $this->service = new UserDAO();
+
+        return $this->service->getUserProfile($id);
+    }
     
     public function addUserPortfolio($userPortfolioData, $id) 
     {

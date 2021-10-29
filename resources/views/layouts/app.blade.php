@@ -51,13 +51,18 @@
   padding-bottom: 50px;
   padding-left: 80px;
 }
+
+#bioSection{
+    background-color:#DCDCDC!important;
+
+}
     </style>
 
    
 
     
 </head>
-<body style=background-color:#989898> 
+<body style=background-color:#DCDCDC> 
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
@@ -148,7 +153,8 @@
         <main class="py-4">
             @yield('content')
         </main>
-@include('layouts.footer')
     </div>
+    @include('layouts.footer')
+
 </body>
 </html>

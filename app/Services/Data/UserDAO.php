@@ -253,6 +253,26 @@ class UserDAO
             $e->getMessage();
         }
     }
+
+    public function getUserProfile($id)
+    {
+        try
+        {
+            $UserProfile = DB::table('userportfolio')->where('userID', $id)->first();
+
+            $gymGoals = $UserPortfolio->gymGoals;
+            $gymExperience = $UserPortfolio->gymExperience;
+            $workoutPrefrence = $UserPortfolio->workoutPrefrence;
+
+            $temp = new getUserProfile($gymGoals, $gymExperience, $workoutPrefrence);
+
+            return $temp;
+        }
+        catch (Exception $e)
+        {
+            $e->getMessage();
+        }
+    }
     
     public function getGroups($id){
     	try {

@@ -43,6 +43,7 @@ class UserController extends Controller
         
     }
        
+    //Adding user Portfolio
     public function addUserPortfolio(Request $request)
     {
         $id = Auth::user()->id;
@@ -59,7 +60,28 @@ class UserController extends Controller
         return View('/userPages/displayUserPortfolio')->with('portfolio', $portfolio);
        
     }
+
+
+    public function displayUserProfile(Request $request)
+    {
+        $id = Auth::user()->id;
+
+        $gymGoals = request()->get('gymGoals');
+        $gymExperience = request()->get('gymExperience');
+        $workoutPrefrence = request()->get('workoutPrefrence');
+        $temp = new UserPortfolioModel($gymGoals, $gymExperience, $workoutPrefrence);
+        
+        $bs = new UserBS();
+        $profile = $bs->getUserPortfolio($id);
+
+        return View('/userPages/displayUserProfile')->with('profile', $profile);
+
+        
+        $profile = $bs->getUserProfile($id);
+    }
     
+
+
     // User search job
     public function searchJob(Request $request)
     {

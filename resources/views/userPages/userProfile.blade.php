@@ -12,9 +12,9 @@
 		</thead>
 		<tbody align="center"> 
             		<tr>
-            		    <td>{{$portfolio->gymGoals}}</td>
-            			<td>{{$portfolio->gymExperience}}</td>
-                    	<td>{{$portfolio->workoutPrefrence}}</td>
+            		    <td>{{$profile->gymGoals}}</td>
+            			<td>{{$profile->gymExperience}}</td>
+                    	<td>{{$profile->workoutPrefrence}}</td>
                     	
                     </tr>
 		</tbody>

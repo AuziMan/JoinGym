@@ -106,6 +106,14 @@ Route::get('/userPortfolio', function()
     
 Route::post('/addUserPortfolio', 'UserController@addUserPortfolio');
 
+//=======================User Profile========================
+
+Route::get('/userProfile', function()
+{
+    return view('userPages/userProfile');
+});
+
+
 //=======================Group Routes========================
 Route::get('/adminGroup', 'AdminController@adminGroup');
 
@@ -128,4 +136,6 @@ Route::get('/groups', 'GroupController@userGroupView');
 Route::post('/joinGroup', 'GroupController@joinGroup');
 
 Route::post('/leaveGroup', 'GroupController@leaveGroup');
+
+//=======================User Portfolio========================
 

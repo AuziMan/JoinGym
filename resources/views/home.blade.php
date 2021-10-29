@@ -26,7 +26,7 @@
             </div>
         </div>
     </header>
-    <section  class="text-center bg-light features-icons" >
+    <section  class="text-center bg-light features-icons" id="bioSection" >
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
