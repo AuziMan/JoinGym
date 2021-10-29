@@ -12,7 +12,7 @@
     <title>Home - Brand</title>
 </head>
 
-<body> 
+<body style=background-color:#989898> 
     <header class="text-center text-white masthead" style="background: url('bg-masthead.jpg')no-repeat center center;background-size: cover;">
         <div class="overlay">
             <div class="container"></div>
@@ -26,27 +26,28 @@
             </div>
         </div>
     </header>
-    <section class="text-center bg-light features-icons">
+    <section  class="text-center bg-light features-icons" >
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
                     <div class="mx-auto features-icons-item mb-6 mb-lg-0 mb-lg-3">
                         <div class="d-flex features-icons-icon"><i class="icon-screen-desktop m-auto text-primary"></i></div>
-                        <h3>Hobbies</h3>
-                        <br>
-                        <ul>
-                            <li>Working out</li>
-                            <li>Building Websites</li>
-                            <li>hanging with friends</li>
-                            <li>Sports</li>
-                        </ul>
+                            <h3>Hobbies</h3>
+                            <ul class="lead mb-0">
+                                <li>Working out</li>
+                                <li>Building Websites</li>
+                                <li>hanging with friends</li>
+                                <li>Sports</li>
+                            </ul>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
                         <div class="d-flex features-icons-icon"><i class="icon-layers m-auto text-primary"></i></div>
-                        <h3>Bootstrap 4 Ready</h3>
-                        <p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
+                        <h3>Goals for my Carrer Future</h3>
+                        <p class="">For now, I am wanting to gain as much knowlege as possible about the technology industry.<br>
+                            Because I enjoy working with people so much, I would eventually want to end up in a project managment position, 
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -59,24 +60,47 @@
             </div>
         </div>
     </section>
+
+    <div class="row">
+        <div class="column">
+        <img src="../images/hikingPic.png" width="300" height="500" class="center">
+        </div>
+        <div class="column">
+        <img src="../images/soccerpic2.png" width="250" height="200" class="center">
+        </div>
+        <div class="column">
+        <img src="../images/moutainPic.png" width="300" height="500" class="center">
+        </div>
+    </div>
+
+
+    <br>
+    <br>
     <section class="showcase">
         <div class="container-fluid p-0">
             <div class="row g-0">
-                <div class="col-lg-6 text-white order-lg-2 showcase-img" style="background-image:url('bg-showcase-1.jpg');"><span></span></div>
+                <div class="col-lg-6 text-white order-lg-2 showcase-img" ><span></span></div>
                 <div class="col-lg-6 my-auto order-lg-1 showcase-text">
-                    <h2>Fully Responsive Design</h2>
-                    <p class="lead mb-0">When you use a theme created with Bootstrap, you know that the theme will look great on any device, whether it&#39;s a phone, tablet, or desktop the page will behave responsively!</p>
+                    <h2>A bit about the website:</h2>
+                    <p class="lead mb-0">
+                        The original purpose of the website was a job application (think simpler Linkedin) that was meant to be build in a one semeester course. 
+                        This is just a earlier version that I have converted into my own website. This is where I do alot of my self practice for web-dev, as I am 
+                        forced to work around a framework. 
+                    </p>
                 </div>
             </div>
             <div class="row g-0">
-                <div class="col-lg-6 text-white showcase-img" style="background-image:url('bg-showcase-2.jpg');"><span></span></div>
+                <div class="col-lg-6 text-white showcase-img"><span></span></div>
                 <div class="col-lg-6 my-auto order-lg-1 showcase-text">
-                    <h2>Updated For Bootstrap 4</h2>
-                    <p class="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes are now using Bootstrap 4!</p>
+                    <h2>What are my skills and goals?</h2>
+                    <p class="lead mb-0">
+                        As (hopefully) I have displayed with this site, I have a good amount of experience with front end design using HTML+CSS and currently following a course on youtube
+                        teaching java script. I am also knowlegable using PHP, both in and outside of a framework. Database work is also not forign to me at all. 
+                    </p>
                 </div>
             </div>
             <div class="row g-0">
-                <div class="col-lg-6 text-white order-lg-2 showcase-img" style="background-image:url('bg-showcase-3.jpg');"><span></span></div>
+                <div class="col-lg-6 text-white order-lg-2 showcase-img" ><span></span></div>
                 <div class="col-lg-6 my-auto order-lg-1 showcase-text">
                     <h2>Easy to Use &amp; Customize</h2>
                     <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>

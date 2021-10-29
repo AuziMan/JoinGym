@@ -24,15 +24,40 @@
         {
             list-style-type: none;
         }   
+        .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
         
+.container, .showcase
+{
+  background-color:#989898
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
     </style>
 
    
 
     
 </head>
-<body>
+<body style=background-color:#989898> 
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
