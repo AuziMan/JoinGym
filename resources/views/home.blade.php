@@ -13,7 +13,7 @@
 </head>
 
 <body style=background-color:#989898> 
-    <header class="text-center text-white masthead" style="background: url('bg-masthead.jpg')no-repeat center center;background-size: cover;">
+    <header class="text-center text-white masthead">
         <div class="overlay">
             <div class="container"></div>
         </div>
@@ -30,7 +30,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="mx-auto features-icons-item mb-6 mb-lg-0 mb-lg-3">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
                         <div class="d-flex features-icons-icon"><i class="icon-screen-desktop m-auto text-primary"></i></div>
                             <h3>Hobbies</h3>
                             <ul class="lead mb-0">
@@ -53,8 +53,8 @@
                 <div class="col-lg-4">
                     <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
                         <div class="d-flex features-icons-icon"><i class="icon-check m-auto text-primary"></i></div>
-                        <h3>Easy to Use</h3>
-                        <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
+                        <h3>About Me</h3>
+                        <p class="lead mb-0"></p>
                     </div>
                 </div>
             </div>
@@ -83,7 +83,7 @@
                 <div class="col-lg-6 my-auto order-lg-1 showcase-text">
                     <h2>A bit about the website:</h2>
                     <p class="lead mb-0">
-                        The original purpose of the website was a job application (think simpler Linkedin) that was meant to be build in a one semeester course. 
+                        The original purpose of the website was a job application site (think simpler Linkedin) that was meant to be build in a one semeester course. 
                         This is just a earlier version that I have converted into my own website. This is where I do alot of my self practice for web-dev, as I am 
                         forced to work around a framework. 
                     </p>
@@ -102,7 +102,7 @@
             <div class="row g-0">
                 <div class="col-lg-6 text-white order-lg-2 showcase-img" ><span></span></div>
                 <div class="col-lg-6 my-auto order-lg-1 showcase-text">
-                    <h2>Easy to Use &amp; Customize</h2>
+                    <h2></h2>
                     <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
                 </div>
             </div>
@@ -133,24 +133,7 @@
             </div>
         </div>
     </section>
-    <section class="text-center text-white call-to-action" style="background:url('bg-masthead.jpg') no-repeat center center;background-size:cover;">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-9 mx-auto position-relative">
-                    <h2 class="mb-4">Ready to get started? Sign up now!</h2>
-                </div>
-                <div class="col-md-10 col-lg-8 col-xl-7 mx-auto position-relative">
-                    <form>
-                        <div class="row">
-                            <div class="col-12 col-md-9 mb-2 mb-md-0"><input type="email" class="form-control form-control-lg" placeholder="Enter your email..." /></div>
-                            <div class="col-12 col-md-3"><button class="btn btn-primary btn-lg" type="submit">Sign up!</button></div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+    
     <footer class="bg-light footer">
         <div class="container">
             <div class="row">
@@ -164,7 +147,7 @@
                         <li class="list-inline-item"><span>⋅</span></li>
                         <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
                     </ul>
-                    <p class="text-muted small mb-4 mb-lg-0">© Brand 2021. All Rights Reserved.</p>
+                    <p class="text-muted small mb-4 mb-lg-0">© Austin Driver JoinGym 2021. All Rights Reserved.</p>
                 </div>
                 <div class="col-lg-6 text-center text-lg-end my-auto h-100">
                     <ul class="list-inline mb-0">

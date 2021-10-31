@@ -44,28 +44,43 @@
   display: table;
 }
         
-.container, .showcase
+.container, .showcase 
 {
-  background-color:#989898
+  background-color:#9E141E
   padding-right: 30px;
   padding-bottom: 50px;
   padding-left: 80px;
 }
 
-#bioSection{
-    background-color:#DCDCDC!important;
+#bioSection, #masthead{
+    background-color:#394490!important;
+}
+
+#app{
+    background-color:#394490!important;
+}
+
+#bar-nav{
+    font-size: 20px;!important
 
 }
+
+.testimonials{
+    padding-top: 30px;
+
+}
+
+
     </style>
 
    
 
     
 </head>
-<body style=background-color:#DCDCDC> 
+<body style=background-color:#9E141E!important> 
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm" style=background-color:#394490!important>
+            <div class="container" id="bar-nav">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a>
