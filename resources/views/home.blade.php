@@ -12,7 +12,7 @@
     <title>Home - Brand</title>
 </head>
 
-<body style=background-color:#989898> 
+<body style=background-color:#383B4D> 
     <header class="text-center text-white masthead">
         <div class="overlay">
             <div class="container"></div>
@@ -20,7 +20,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-9 mx-auto position-relative">
-                    <h1 class="mb-5">A little bit about me and this website...</h1>
+                    <h1 class="mb-5">A little bit about Me</h1>
                 </div>
                 
             </div>
@@ -30,38 +30,47 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
-                        <div class="d-flex features-icons-icon"><i class="icon-screen-desktop m-auto text-primary"></i></div>
-                            <h3>Hobbies</h3>
-                            <ul class="lead mb-0">
-                                <li>Working out</li>
-                                <li>Building Websites</li>
-                                <li>hanging with friends</li>
-                                <li>Sports</li>
-                            </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
                         <div class="d-flex features-icons-icon"><i class="icon-layers m-auto text-primary"></i></div>
                         <h3>Goals for my Carrer Future</h3>
                         <p class="">For now, I am wanting to gain as much knowlege as possible about the technology industry.<br>
-                            Because I enjoy working with people so much, I would eventually want to end up in a project managment position, 
+                            Because I enjoy working with people so much, I would eventually want to end up in a project managment position. 
                         </p>
                     </div>
+                </div>
+                <div class="col-lg-4">
+                    
+
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <div class="d-flex features-icons-icon"><i class="icon-screen-desktop m-auto text-primary"></i></div>
+                            <h3>Hobbies</h3>
+                            <li>Sports</li>
+                            <li>Hiking</li>
+                            <li>Coding(duh)</li>
+                            <li>Weightlifting</li>
+                    </div>
+
                 </div>
                 <div class="col-lg-4">
                     <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
                         <div class="d-flex features-icons-icon"><i class="icon-check m-auto text-primary"></i></div>
                         <h3>About Me</h3>
-                        <p class="lead mb-0"></p>
+                        <p class="">
+                            I grew up in a small country town in North-east Kansas. Most of my time was spent playing sports or working outside, but since 
+                            both my dad and uncle have jobs in the tech industry, the work I saw them do peaked my interest. My freshman year of highschool,
+                            I took a basic web design course and this eventually turned into my making websites using basic CSS and HTML.
+                        
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    
+
     <div class="row">
+    
         <div class="column">
         <img src="../images/hikingPic.png" width="300" height="500" class="center">
         </div>
@@ -72,18 +81,47 @@
         <img src="../images/moutainPic.png" width="300" height="500" class="center">
         </div>
     </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="column">
+        <img src="../images/auziandmatt.png" width="300" height="500" class="center">
+        </div>
+        <div class="column">
+        <img src="../images/auzianddaboys.png" width="250" height="400" class="center">
+        </div>
+        <div class="column">
+        <img src="../images/auziandkyra.png" width="330" height="500" class="center">
+        </div>
+    </div>
+
 
 
     <br>
     <br>
+    <br>
+    <header class="text-center text-white masthead">
+        <div class="overlay">
+            <div class="container"></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto position-relative">
+                    <h1 class="mb-5">A little bit about this Website</h1>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+
     <section class="showcase">
         <div class="container-fluid p-0">
             <div class="row g-0">
                 <div class="col-lg-6 text-white order-lg-2 showcase-img" ><span></span></div>
                 <div class="col-lg-6 my-auto order-lg-1 showcase-text">
-                    <h2>A bit about the website:</h2>
+                    <h2>Purpose</h2>
                     <p class="lead mb-0">
-                        The original purpose of the website was a job application site (think simpler Linkedin) that was meant to be build in a one semeester course. 
+                        The original purpose of this website was a job application site (think simpler Linkedin) that was meant to be build in a one semeester course. 
                         This is just a earlier version that I have converted into my own website. This is where I do alot of my self practice for web-dev, as I am 
                         forced to work around a framework. 
                     </p>
@@ -95,7 +133,7 @@
                     <h2>What are my skills and goals?</h2>
                     <p class="lead mb-0">
                         As (hopefully) I have displayed with this site, I have a good amount of experience with front end design using HTML+CSS and currently following a course on youtube
-                        teaching java script. I am also knowlegable using PHP, both in and outside of a framework. Database work is also not forign to me at all. 
+                        teaching JavaScript. I am also knowlegable using PHP, Java, and several C variants. All PHP classes I have taken involved the use of a database, so 
                     </p>
                 </div>
             </div>
@@ -103,31 +141,39 @@
                 <div class="col-lg-6 text-white order-lg-2 showcase-img" ><span></span></div>
                 <div class="col-lg-6 my-auto order-lg-1 showcase-text">
                     <h2></h2>
-                    <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
+                    <p class="lead mb-0">
+
+                    </p>
                 </div>
             </div>
         </div>
     </section>
     <section class="text-center bg-light testimonials">
         <div class="container">
-            <h2 class="mb-5">What people are saying...</h2>
+            <h2 class="mb-5">What I could bring to the Team:</h2>
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img class="rounded-circle img-fluid mb-3" src="testimonials-1.jpg" />
-                        <h5>Margaret E.</h5>
-                        <p class="font-weight-light mb-0">&quot;This is fantastic! Thanks so much guys!&quot;</p>
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0">
+                        <h5>Ability to learn</h5>
+                        <p class="font-weight-light mb-0">My entire life, I've never had a similar job. Ive went from retail, to construction/landscaping, to an IT helpdesk job in around a year.
+                            Ive always prided myself in my ability to learn and adapt quickly to new tasks. 
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img class="rounded-circle img-fluid mb-3" src="testimonials-2.jpg" />
-                        <h5>Fred S.</h5>
-                        <p class="font-weight-light mb-0">&quot;Bootstrap is amazing. I&#39;ve been using it to create lots of super nice landing pages.&quot;</p>
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0">
+                        <h5></h5>
+                        <p class="font-weight-light mb-0">
+                        </p>
                     </div>
-                </div>
+                </div> 
                 <div class="col-lg-4">
-                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img class="rounded-circle img-fluid mb-3" src="testimonials-3.jpg" />
-                        <h5>Sarah W.</h5>
-                        <p class="font-weight-light mb-0">&quot;Thanks so much for making these free resources available to us!&quot;</p>
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0">
+                        <h5>Dedication</h5>
+                        <p class="font-weight-light mb-0">
+                        Becasue I belive the first job in the tech industry can be the most impactful, I am looking forward to learning as much as possible 
+                            to building my own personal skills, but to learn how the industry functions as a whole
+                        </p>
                     </div>
                 </div>
             </div>
@@ -138,15 +184,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 text-center text-lg-start my-auto h-100">
-                    <ul class="list-inline mb-2">
-                        <li class="list-inline-item"><a href="#">About</a></li>
-                        <li class="list-inline-item"><span>⋅</span></li>
-                        <li class="list-inline-item"><a href="#">Contact</a></li>
-                        <li class="list-inline-item"><span>⋅</span></li>
-                        <li class="list-inline-item"><a href="#">Terms of  Use</a></li>
-                        <li class="list-inline-item"><span>⋅</span></li>
-                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-                    </ul>
+                    
                     <p class="text-muted small mb-4 mb-lg-0">© Austin Driver JoinGym 2021. All Rights Reserved.</p>
                 </div>
                 <div class="col-lg-6 text-center text-lg-end my-auto h-100">

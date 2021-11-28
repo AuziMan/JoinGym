@@ -20,9 +20,10 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <style>
-        ul 
+        li 
         {
             list-style-type: none;
+            text-align: center;
         }   
         .center {
   display: block;
@@ -46,18 +47,18 @@
         
 .container, .showcase 
 {
-  background-color:#9E141E
+  background-color:#383B4D
   padding-right: 30px;
   padding-bottom: 50px;
   padding-left: 80px;
 }
 
 #bioSection, #masthead{
-    background-color:#394490!important;
+    background-color:#383B4D!important;
 }
 
 #app{
-    background-color:#394490!important;
+    background-color:#383B4D!important;
 }
 
 #bar-nav{
@@ -70,6 +71,10 @@
 
 }
 
+.bioSection{
+    padding-right: 100px!important;
+}
+
 
     </style>
 
@@ -77,9 +82,9 @@
 
     
 </head>
-<body style=background-color:#9E141E!important> 
+<body style=background-color:#383B4D!important> 
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm" style=background-color:#394490!important>
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm" style=background-color:#383B4D!important>
             <div class="container" id="bar-nav">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
@@ -126,7 +131,7 @@
                             @endif
                             @if(Auth::user()->role == 'customer')
                             <li class="nav-item">
-                            	<a class="nav-link" href="userProfile">{{__('View Profile')}}</a>
+                            	<a class="nav-link" href="userProfile">{{__('')}}</a>
                             </li>
                             <li class="nav-item">
                             	<input type="hidden" value="{{Auth::user()->id}}" name="id" id="id">
