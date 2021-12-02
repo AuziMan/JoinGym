@@ -120,7 +120,7 @@
                             	<a class="nav-link" href="jobAdmin">{{__('Listings Admin')}}</a>
                             </li>
                              <li class="nav-item">
-                            	<a class="nav-link" href="adminGroup">{{__('Groups Admin')}}</a>
+                            	<a class="nav-link" href="admingym">{{__('gyms Admin')}}</a>
                             </li>
                              <li class="nav-item">
                             	<a class="nav-link" href="moreinfo">{{__('Additional Info')}}</a>
@@ -144,7 +144,7 @@
                             	<a class="nav-link" href="userPortfolio">{{__('User Portfolio')}}</a>
                             </li>
                              <li class="nav-item">
-                            	<a class="nav-link" href="groups">{{__('Groups')}}</a>
+                            	<a class="nav-link" href="gyms">{{__('Gyms')}}</a>
                             </li>
                             @endif
                             <li class="nav-item dropdown">

@@ -1,73 +1,54 @@
 <?php
 namespace App\Models;
 
-class GroupModel
+class gymModel
 {
-    private $groupID;
-    private $groupName;
-    private $interest;
-    private $type;
+    private $gymID;
+    private $gymName;
+    private $open;
     private $memberCount;
     private $description;
-    private $exists;
-    public function __construct($groupID, $groupName, $interest, $type, $memberCount, $description, $exists)
+    public function __construct($gymID, $gymName, $open, $memberCount, $description)
     {
-        $this->groupID = $groupID;
-        $this->groupName = $groupName;
-        $this->interest = $interest;
-        $this->type = $type;
+        $this->gymID = $gymID;
+        $this->gymName = $gymName;
+        $this->open = $open;
         $this->memberCount = $memberCount;
         $this->description = $description;
-        $this->exists = $exists;
     }
     
     
+ 
     /**
      * @return mixed
      */
-    public function getExists()
+    public function getgymID()
     {
-        return $this->exists;
+        return $this->gymID;
     }
 
     /**
-     * @param mixed $exists
+     * @param mixed $gymID
      */
-    public function setExists($exists)
+    public function setgymID($gymID)
     {
-        $this->exists = $exists;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getGroupID()
-    {
-        return $this->groupID;
-    }
-
-    /**
-     * @param mixed $groupID
-     */
-    public function setGroupID($groupID)
-    {
-        $this->groupID = $groupID;
+        $this->gymID = $gymID;
     }
 
     /**
      * @return mixed
      */
-    public function getGroupName()
+    public function getgymName()
     {
-        return $this->groupName;
+        return $this->gymName;
     }
 
     /**
-     * @param mixed $groupName
+     * @param mixed $gymName
      */
-    public function setGroupName($groupName)
+    public function setgymName($gymName)
     {
-        $this->groupName = $groupName;
+        $this->gymName = $gymName;
     }
 
     /**

@@ -9,10 +9,10 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Arr;
-use App\Models\GroupModel;
-use App\Models\GroupMemberModel;
+use App\Models\gymModel;
+use App\Models\gymMemberModel;
 
-class GroupDAO
+class gymDAO
 {
     // Define conn string
     private $conn;
@@ -31,25 +31,25 @@ class GroupDAO
     }
     
     
-    public function getAllGroups()
+    public function getAllgyms()
     {
         try
         {
-            $groups = DB::table('groups')->get();
-            $groupArr = Array();
-            foreach ($groups as $group)
+            $gyms = DB::table('gyms')->get();
+            $gymArr = Array();
+            foreach ($gyms as $gym)
             {
-                $groupID = $group->groupID;
-                $groupName = $group->groupName;
-                $interest = $group->interest;
-                $type = $group->type;
-                $memberCount = $this->getMemberCount($groupID);
-                $description = $group->description;
+                $gymID = $gym->gymID;
+                $gymName = $gym->gymName;
+                $interest = $gym->interest;
+                $type = $gym->type;
+                $memberCount = $this->getMemberCount($gymID);
+                $description = $gym->description;
                 $exists = true;
-                $newGroup = new GroupModel($groupID, $groupName, $interest, $type, $memberCount, $description, $exists);
-                array_push($groupArr, $newGroup);
+                $newgym = new gymModel($gymID, $gymName, $interest, $type, $memberCount, $description, $exists);
+                array_push($gymArr, $newgym);
             }
-            return $groupArr;
+            return $gymArr;
         }
         catch (Exception $e)
         {
@@ -57,20 +57,20 @@ class GroupDAO
         }
     }
     
-    public function getGroup($id)
+    public function getgym($id)
     {
         try
         {
-            $group = DB::table('groups')->where('groupID', $id)->first();
+            $gym = DB::table('gyms')->where('gymID', $id)->first();
             
-            $groupID = $group->groupID;
-            $groupName = $group->groupName;
-            $interest = $group->interest;
-            $type = $group->type;
-            $memberCount = $this->getMemberCount($groupID);
-            $description = $group->description;
+            $gymID = $gym->gymID;
+            $gymName = $gym->gymName;
+            $interest = $gym->interest;
+            $type = $gym->type;
+            $memberCount = $this->getMemberCount($gymID);
+            $description = $gym->description;
             $exists = true;
-            $temp = new GroupModel($groupID, $groupName, $interest, $type, $memberCount, $description, $exists);
+            $temp = new gymModel($gymID, $gymName, $interest, $type, $memberCount, $description, $exists);
         
             return $temp;
         }
@@ -84,7 +84,7 @@ class GroupDAO
     {
         try 
         {
-            $count = DB::table('groupmembers')->where('groupID',$id)->count();
+            $count = DB::table('gymmembers')->where('gymID',$id)->count();
             return $count;
         } 
         catch (Exception $e) 
@@ -92,20 +92,20 @@ class GroupDAO
             $e->getMessage();
         }
     }
-    public function addGroup(GroupModel $group)
+    public function addgym(gymModel $gym)
     {
         try
         {
-            $groupID = $group->getGroupID();
-            $groupName = $group->getGroupName();
-            $interest = $group->getInterest();
-            $type = $group->getType();
-            $description = $group->getDescription();
+            $gymID = $gym->getgymID();
+            $gymName = $gym->getgymName();
+            $interest = $gym->getInterest();
+            $type = $gym->getType();
+            $description = $gym->getDescription();
             
-            $values = (['groupID'=>$groupID, 'groupName'=>$groupName, 'interest'=>$interest, 
+            $values = (['gymID'=>$gymID, 'gymName'=>$gymName, 'interest'=>$interest, 
                 'type'=>$type, 'description'=>$description]);
             
-            $result = DB::table('groups')->insert($values);
+            $result = DB::table('gyms')->insert($values);
             
             if($result > 0)
             {
@@ -123,14 +123,14 @@ class GroupDAO
             $e->getMessage();
         }
     }
-    public function editGroup(GroupModel $group)
+    public function editgym(gymModel $gym)
     {
         try
         {
-            $this->dbquery = "UPDATE groups SET groupName='{$group->getGroupName()}', 
-                                interest='{$group->getInterest()}', type='{$group->getType()}',
-                                description='{$group->getDescription()}'
-                                WHERE groupID='{$group->getGroupID()}'";
+            $this->dbquery = "UPDATE gyms SET gymName='{$gym->getgymName()}', 
+                                interest='{$gym->getInterest()}', type='{$gym->getType()}',
+                                description='{$gym->getDescription()}'
+                                WHERE gymID='{$gym->getgymID()}'";
                                 
             // If the selected query returns a result set
             $result = mysqli_query($this->conn, $this->dbquery);
@@ -152,11 +152,11 @@ class GroupDAO
         } 
     }
     
-    public function deleteGroup($id)
+    public function deletegym($id)
     {
         try 
         {
-            $result =  DB::table('groups')->where('groupID',$id)->delete();
+            $result =  DB::table('gyms')->where('gymID',$id)->delete();
            
             if ($result > 0)
             {
@@ -175,13 +175,13 @@ class GroupDAO
         }
     }
     
-    public function joinGroup($id, $name, $groupID)
+    public function joingym($id, $name, $gymID)
     {
         try 
         {
-            $values = (['groupID'=>$groupID, 'memberName'=>$name, 'memberID'=>$id]);
+            $values = (['gymID'=>$gymID, 'memberName'=>$name, 'memberID'=>$id]);
             
-            $result = DB::table('groupmembers')->insert($values);
+            $result = DB::table('gymmembers')->insert($values);
             
             if ($result > 0)
             {
@@ -201,12 +201,12 @@ class GroupDAO
         }
     }
     
-    public function leaveGroup($groupID,$memberID)
+    public function leavegym($gymID,$memberID)
     {
         try 
         {
-            $result = DB::table('groupmembers')
-            ->where([['groupID',$groupID],['memberID',$memberID]])->delete();
+            $result = DB::table('gymmembers')
+            ->where([['gymID',$gymID],['memberID',$memberID]])->delete();
             
             if($result > 0)
             {
@@ -225,12 +225,12 @@ class GroupDAO
         }
         
     }
-    public function getMembers($groupID)
+    public function getMembers($gymID)
     {
         try 
         {
-            $members = DB::table('groupmembers')->where('groupID', $groupID)->get();
-            $count = DB::table('groupmembers')->where('groupID', $groupID)->get()->count();
+            $members = DB::table('gymmembers')->where('gymID', $gymID)->get();
+            $count = DB::table('gymmembers')->where('gymID', $gymID)->get()->count();
             if($count > 1)
             {
                 $memberArr = Array();
@@ -239,7 +239,7 @@ class GroupDAO
                     $memberName = $member->memberName;
                     $memberID = $member->memberID;
                     
-                    $member = new GroupMemberModel($groupID, $memberName, $memberID);
+                    $member = new gymMemberModel($gymID, $memberName, $memberID);
                     
                     array_push($memberArr, $member);
                 }
@@ -247,12 +247,12 @@ class GroupDAO
             }
             if($count == 1)
             {
-                $member = DB::table('groupmembers')->where('groupID', $groupID)->first();
+                $member = DB::table('gymmembers')->where('gymID', $gymID)->first();
                 
                 $memberName = $member->memberName;
                 $memberID = $member->memberID;
                 
-                $memberModel = new GroupMemberModel($groupID, $memberName, $memberID);
+                $memberModel = new gymMemberModel($gymID, $memberName, $memberID);
                 
                 return $memberModel;
             }
@@ -267,11 +267,11 @@ class GroupDAO
         }
     }
     
-    public function groupMemberExists($groupID, $memberID)
+    public function gymMemberExists($gymID, $memberID)
     {
         try 
         {
-            $result = DB::table('groupmembers')->where([['groupID',$groupID],['memberID',$memberID]])
+            $result = DB::table('gymmembers')->where([['gymID',$gymID],['memberID',$memberID]])
             ->get()->count();
             
             if($result == 1)

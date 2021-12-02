@@ -8,8 +8,8 @@ use App\Http\Controllers\AdminController;
 |--------------------------------------------------------------------------
 |
 | Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
+| routes are loaded by the RouteServiceProvider within a gym which
+| contains the "web" middleware gym. Now create something great!
 |
 */
 
@@ -114,28 +114,28 @@ Route::get('/userProfile', function()
 });
 
 
-//=======================Group Routes========================
-Route::get('/adminGroup', 'AdminController@adminGroup');
+//=======================Gym Routes========================
+Route::get('/admingym', 'AdminController@admingym');
 
-Route::get('/addGroupView', function(){
-    return view('/adminPages/addGroup');
+Route::get('/addgymView', function(){
+    return view('/adminPages/addgym');
 });
 
-Route::post('/addGroup', 'AdminController@addGroup');
+Route::post('/addgym', 'AdminController@addgym');
 
-Route::post('/viewGroup', 'GroupController@viewGroupMembers');
+Route::post('/viewgym', 'gymController@viewgymMembers');
 
-Route::post('/editGroupView','AdminController@editGroupView');
+Route::post('/editgymView','AdminController@editgymView');
 
-Route::post('/editGroup', 'AdminController@editGroup');
+Route::post('/editgym', 'AdminController@editgym');
 
-Route::post('/deleteGroup', 'AdminController@deleteGroup');
+Route::post('/deletegym', 'AdminController@deletegym');
 
-Route::get('/groups', 'GroupController@userGroupView');
+Route::get('/gyms', 'gymController@usergymView');
 
-Route::post('/joinGroup', 'GroupController@joinGroup');
+Route::post('/joingym', 'gymController@joingym');
 
-Route::post('/leaveGroup', 'GroupController@leaveGroup');
+Route::post('/leavegym', 'gymController@leavegym');
 
 //=======================User Portfolio========================
 

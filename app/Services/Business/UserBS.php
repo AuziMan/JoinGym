@@ -74,10 +74,10 @@ class UserBS
         return $this->service->addUserPortfolio($userPortfolioData, $id);
     }
     
-    public function getGroups($id){
+    public function getgyms($id){
     	$this->service = new UserDAO();
     	
-    	return $this->service->getGroups($id);
+    	return $this->service->getgyms($id);
     }
 }
 

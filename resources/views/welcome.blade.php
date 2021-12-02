@@ -49,6 +49,15 @@
 
             .title {
                 font-size: 84px;
+                font-family: Monospace;
+
+                color: #E74C3C;
+            }
+
+            .titlebio{
+                font-size: 30px;
+                font-family: Monospace;
+                color: #E74C3C;
             }
 
             .links > a {
@@ -66,7 +75,7 @@
             }
         </style>
     </head>
-    <body>
+    <body background="../images/gymBackground.jpeg">
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -84,8 +93,12 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Austin's Heroku App
+                    Welcome to JoinGym
                 </div>
+                <div class="titlebio">
+                    Changing how gym members meet one gym at a time.
+                <div>
+                        
 
                 
             </div>

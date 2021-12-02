@@ -5,18 +5,18 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Add Affinity Group') }}</div>
+                <div class="card-header">{{ __('Add Affinity gym') }}</div>
                <div class="card-body">
-                    <form method="POST" action="editGroup">
+                    <form method="POST" action="editgym">
                         {{csrf_field()}}
-						<input type="hidden" name="groupID" value="{{$group->getGroupID()}}">
-                       	<div class="form-group row">
-                            <label for="groupName" class="col-md-4 col-form-label text-md-right">{{ __('Group Name') }}</label>
+						<input type="hidden" name="gymID" value="{{$gym->getgymID()}}">
+                       	<div class="form-gym row">
+                            <label for="gymName" class="col-md-4 col-form-label text-md-right">{{ __('gym Name') }}</label>
 
                             <div class="col-md-6">
-                                <input id="groupName" value="{{$group->getGroupName()}}" type="text" class="form-control @error('groupName') is-invalid @enderror" name="groupName" required autocomplete="groupName" autofocus>
+                                <input id="gymName" value="{{$gym->getgymName()}}" type="text" class="form-control @error('gymName') is-invalid @enderror" name="gymName" required autocomplete="gymName" autofocus>
 
-                                @error('groupName')
+                                @error('gymName')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -24,11 +24,11 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
+                        <div class="form-gym row">
                             <label for="interest" class="col-md-4 col-form-label text-md-right">{{ __('Common Interest') }}</label>
 
                             <div class="col-md-6">
-                                <input id="interest" value="{{$group->getInterest()}}" type="text" class="form-control @error('interest') is-invalid @enderror" name="interest"  required autocomplete="interest">
+                                <input id="interest" value="{{$gym->getInterest()}}" type="text" class="form-control @error('interest') is-invalid @enderror" name="interest"  required autocomplete="interest">
 
                                 @error('interest')
                                     <span class="invalid-feedback" role="alert">
@@ -38,22 +38,22 @@
                             </div>
                         </div>
                         
-                        <div class="form-group row">
-                        	<label for="type" class="col-md-4 col-form-label text-md-right">Group Type</label>
+                        <div class="form-gym row">
+                        	<label for="type" class="col-md-4 col-form-label text-md-right">gym Type</label>
                       		<div class="col-md-6">
                               	<select name="type" class="form-control" >
-                            		<option selected="selected">Choose Group Type</option> 
+                            		<option selected="selected">Choose gym Type</option> 
                             		<option value="Business">Business</option>
 									<option value="Personal">Personal</option>
 								</select>
                          	</div>
                         </div>
                         
-                        <div class="form-group row">
+                        <div class="form-gym row">
                             <label for="description" class="col-md-4 col-form-label text-md-right">{{ __('Description') }}</label>
 
                             <div class="col-md-6">
-                                <input id="description" value="{{$group->getDescription()}}" type="text" class="form-control @error('description') is-invalid @enderror" name="description"  required autocomplete="description">
+                                <input id="description" value="{{$gym->getDescription()}}" type="text" class="form-control @error('description') is-invalid @enderror" name="description"  required autocomplete="description">
 
                                 @error('description')
                                     <span class="invalid-feedback" role="alert">
@@ -63,10 +63,10 @@
                             </div>
                         </div>
                         
-                        <div class="form-group row mb-0">
+                        <div class="form-gym row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                    {{ __('Edit Group') }}
+                                    {{ __('Edit gym') }}
                                 </button>
                             </div>
                         </div>
