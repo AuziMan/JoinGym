@@ -10,8 +10,8 @@ use App\Models\MoreinfoModel;
 use App\Services\Business\JobListBS;
 use App\Models\JobListingModel;
 use App\Models\UserPortfolioModel;
-use App\Services\Business\GroupBS;
-use App\Models\GroupModel;
+use App\Services\Business\gymBS;
+use App\Models\gymModel;
 
 class AdminController extends Controller
 {
@@ -122,12 +122,12 @@ class AdminController extends Controller
     	$id = request()->get('id');
     	$ubs = new UserBS();
     	$user = $ubs->getUser($id);
-    	// get portfolio and groups
+    	// get portfolio and gyms
     	$portfolio = $ubs->getUserPortfolio($id);
-    	$groups = $ubs->getGroups($id);
+    	$gyms = $ubs->getgyms($id);
     	return View('/adminPages/viewUser')->with('user', $user)
     	->with('portfolio', $portfolio)
-    	->with('groups', $groups);
+    	->with('gyms', $gyms);
     	
     }
     
@@ -207,127 +207,127 @@ class AdminController extends Controller
         return View('/adminPages/jobAdmin')->with('jobs', $jobs);
     }
     
-    //Admin group view
-    public function adminGroup()
+    //Admin gym view
+    public function admingym()
     {
-        $bs = new GroupBS();
-        $groupArr = $bs->getAll();
-        $groups = Array();
-        foreach($groupArr as $group)
+        $bs = new gymBS();
+        $gymArr = $bs->getAll();
+        $gyms = Array();
+        foreach($gymArr as $gym)
         {
-            $groupID = $group->getGroupID();
-            $groupName = $group->getGroupName();
-            $interest = $group->getInterest();
-            $type = $group->getType();
-            $memberCount = $bs->getMemberCount($groupID);
-            $description = $group->getDescription();
+            $gymID = $gym->getgymID();
+            $gymName = $gym->getgymName();
+            $interest = $gym->getInterest();
+            $type = $gym->getType();
+            $memberCount = $bs->getMemberCount($gymID);
+            $description = $gym->getDescription();
             $exists = true;
-            $newGroup = new GroupModel($groupID, $groupName, $interest, $type, $memberCount, $description, $exists);
-            array_push($groups, $newGroup);
+            $newgym = new gymModel($gymID, $gymName, $interest, $type, $memberCount, $description, $exists);
+            array_push($gyms, $newgym);
         }
-        return view('/adminPages/groupAdmin')->with('groups', $groups);
+        return view('/adminPages/gymAdmin')->with('gyms', $gyms);
     }
     
-    //Admin edit group view
-    public function editGroupView(Request $request)
+    //Admin edit gym view
+    public function editgymView(Request $request)
     {
-        $groupID = request()->get('groupID');
-        $bs = new GroupBS();
+        $gymID = request()->get('gymID');
+        $bs = new gymBS();
         
-        $group = $bs->getGroup($groupID);
+        $gym = $bs->getgym($gymID);
         
-        return view('adminPages/editGroup')->with('group', $group);
+        return view('adminPages/editgym')->with('gym', $gym);
     }
     
-    //Admin edit group data post
-    public function editGroup (Request $request)
+    //Admin edit gym data post
+    public function editgym (Request $request)
     {
-        $groupID = request()->get('groupID');
-        $groupName = request()->get('groupName');
+        $gymID = request()->get('gymID');
+        $gymName = request()->get('gymName');
         $interest = request()->get('interest');
         $type = request()->get('type');
         $description = request()->get('description');
         
-        $bs = new GroupBS();
-        $memberCount = $bs->getMemberCount($groupID);
+        $bs = new gymBS();
+        $memberCount = $bs->getMemberCount($gymID);
         
-        $group = new GroupModel($groupID, $groupName, $interest, $type, $memberCount, $description);
+        $gym = new gymModel($gymID, $gymName, $interest, $type, $memberCount, $description);
         
-        $bs->editGroup($group);
+        $bs->editgym($gym);
         
         
-        $groupArr = $bs->getAll();
-        $groups = Array();
-        foreach($groupArr as $group)
+        $gymArr = $bs->getAll();
+        $gyms = Array();
+        foreach($gymArr as $gym)
         {
-            $groupID = $group->getGroupID();
-            $groupName = $group->getGroupName();
-            $interest = $group->getInterest();
-            $type = $group->getType();
-            $memberCount = $bs->getMemberCount($groupID);
-            $description = $group->getDescription();
+            $gymID = $gym->getgymID();
+            $gymName = $gym->getgymName();
+            $interest = $gym->getInterest();
+            $type = $gym->getType();
+            $memberCount = $bs->getMemberCount($gymID);
+            $description = $gym->getDescription();
             $exists = true;
-            $newGroup = new GroupModel($groupID, $groupName, $interest, $type, $memberCount, $description, $exists);
-            array_push($groups, $newGroup);
+            $newgym = new gymModel($gymID, $gymName, $interest, $type, $memberCount, $description, $exists);
+            array_push($gyms, $newgym);
         }
-        return view('/adminPages/groupAdmin')->with('groups', $groups); 
+        return view('/adminPages/gymAdmin')->with('gyms', $gyms); 
     }
     
-    //Admin add a new group 
-    public function addGroup(Request $request)
+    //Admin add a new gym 
+    public function addgym(Request $request)
     {
-        $groupName = request()->get('groupName');
+        $gymName = request()->get('gymName');
         $interest = request()->get('interest');
         $type = request()->get('type');
         $description = request()->get('description');
         
-        $temp = new GroupModel(0, $groupName, $interest, $type, 0, $description);
+        $temp = new gymModel(0, $gymName, $interest, $type, 0, $description);
         
-        $bs = new GroupBS();
-        $bs->addGroup($temp);
+        $bs = new gymBS();
+        $bs->addgym($temp);
         
-        $groupArr = $bs->getAll();
-        $groups = Array();
-        foreach($groupArr as $group)
+        $gymArr = $bs->getAll();
+        $gyms = Array();
+        foreach($gymArr as $gym)
         {
-            $groupID = $group->getGroupID();
-            $groupName = $group->getGroupName();
-            $interest = $group->getInterest();
-            $type = $group->getType();
-            $memberCount = $bs->getMemberCount($groupID);
-            $description = $group->getDescription();
+            $gymID = $gym->getgymID();
+            $gymName = $gym->getgymName();
+            $interest = $gym->getInterest();
+            $type = $gym->getType();
+            $memberCount = $bs->getMemberCount($gymID);
+            $description = $gym->getDescription();
             $exists = true;
-            $newGroup = new GroupModel($groupID, $groupName, $interest, $type, $memberCount, $description, $exists);
-            array_push($groups, $newGroup);
+            $newgym = new gymModel($gymID, $gymName, $interest, $type, $memberCount, $description, $exists);
+            array_push($gyms, $newgym);
         }
         
-        return view('/adminPages/groupAdmin')->with('groups', $groups);
+        return view('/adminPages/gymAdmin')->with('gyms', $gyms);
     }
     
-    //Admin delete a group
-    public function deleteGroup(Request $request)
+    //Admin delete a gym
+    public function deletegym(Request $request)
     {
-        $groupID = request()->get('groupID');
+        $gymID = request()->get('gymID');
         
-        $bs = new GroupBS();
+        $bs = new gymBS();
         
-        $bs->deleteGroup($groupID);
+        $bs->deletegym($gymID);
         
-        $groupArr = $bs->getAll();
-        $groups = Array();
-        foreach($groupArr as $group)
+        $gymArr = $bs->getAll();
+        $gyms = Array();
+        foreach($gymArr as $gym)
         {
-            $groupID = $group->getGroupID();
-            $groupName = $group->getGroupName();
-            $interest = $group->getInterest();
-            $type = $group->getType();
-            $memberCount = $bs->getMemberCount($groupID);
-            $description = $group->getDescription();
+            $gymID = $gym->getgymID();
+            $gymName = $gym->getgymName();
+            $interest = $gym->getInterest();
+            $type = $gym->getType();
+            $memberCount = $bs->getMemberCount($gymID);
+            $description = $gym->getDescription();
             $exists = true;
-            $newGroup = new GroupModel($groupID, $groupName, $interest, $type, $memberCount, $description, $exists);
-            array_push($groups, $newGroup);
+            $newgym = new gymModel($gymID, $gymName, $interest, $type, $memberCount, $description, $exists);
+            array_push($gyms, $newgym);
         }
-        return view('/adminPages/groupAdmin')->with('groups', $groups);
+        return view('/adminPages/gymAdmin')->with('gyms', $gyms);
     }
 
 }
