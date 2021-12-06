@@ -4,12 +4,14 @@
 
 
 
+
 <html>
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
     <title>Home - Brand</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body style=background-color:#383B4D> 
@@ -19,8 +21,9 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-xl-9 mx-auto position-relative">
-                    <h1 class="mb-5">A little bit about Me</h1>
+                <div class="col-xl-15 mx-auto position-relative">
+                    <h1 class="mb-5">Welcome to JoinGym</h1>
+                    <h2>Below are a list of Gyms that you are able to join:</h2>
                 </div>
                 
             </div>
@@ -67,6 +70,53 @@
         </div>
     </section>
 
+
+        <div class="wrapper">
+            <div class="cards_wrap">
+                <div class="card_item">
+                    <div class="card_inner">
+                        <div class="card_top">
+                            <img src="../images/cardBGunsplash.jpg" alt="cardBG" style="width: 100px;">
+                        </div>
+                        <div class="card_bottome">
+                            <div class="card_catagory">
+                                Gyms
+                            </div>
+                            <div class="card_info">
+                                <p class="title">
+                                    10 best things bout the gym!
+                                </p>
+                                <p>Filler text </p>
+                            </div>
+                            <div class="card_creator">
+                                Austin
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_item">
+                    <div class="card_inner">
+                        <div class="card_top">
+                            <img src="../images/cardBGunsplash.jpg" alt="cardBG" style="width: 100px;">
+                        </div>
+                        <div class="card_bottome">
+                            <div class="card_catagory">
+                                Gyms
+                            </div>
+                            <div class="card_info">
+                                <p class="title">
+                                    10 best things bout the gym!
+                                </p>
+                                <p>Filler text </p>
+                            </div>
+                            <div class="card_creator">
+                                Austin
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     
 
     <div class="row">
