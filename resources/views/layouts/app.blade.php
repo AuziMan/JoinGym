@@ -45,21 +45,24 @@
   display: table;
 }
         
-.container, .showcase 
+/* .container, .showcase 
 {
   background-color:#383B4D
   padding-right: 30px;
   padding-bottom: 50px;
   padding-left: 80px;
+} */
+
+.bioSection{
+    Height: 150px;
+    padding: 15px;
 }
 
-#bioSection, #masthead{
-    background-color:#383B4D!important;
-}
 
-#app{
+
+/* #app{
     background-color:#383B4D!important;
-}
+} */
 
 #bar-nav{
     font-size: 20px;!important
@@ -73,6 +76,7 @@
 
 .bioSection{
     padding-right: 100px!important;
+    padding: 20px;
 }
 
 
@@ -82,9 +86,9 @@
 
     
 </head>
-<body style=background-color:#383B4D!important> 
+<body style=background-color:#041137!important>  
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm" style=background-color:#383B4D!important>
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm" style=background-color:#781B19!important>
             <div class="container" id="bar-nav">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
