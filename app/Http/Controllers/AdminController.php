@@ -13,6 +13,9 @@ use App\Models\UserPortfolioModel;
 use App\Services\Business\gymBS;
 use App\Models\gymModel;
 
+/**
+ * AdminController
+ */
 class AdminController extends Controller
 {
     // Direct route to admin page
@@ -44,7 +47,13 @@ class AdminController extends Controller
         }
     }
     
-    // Controller that takes id to autofill form
+    // Controller that takes id to autofill form    
+    /**
+     * editView
+     *
+     * @param  mixed $request
+     * @return void
+     */
     public function editView(Request $request)
     {
         $id = request()->get('id');
@@ -55,7 +64,13 @@ class AdminController extends Controller
         return View('/adminPages/editUser')->with('user', $user);
     }
     
-    // Admin edit user function
+    // Admin edit user function    
+    /**
+     * editUser
+     *
+     * @param  mixed $request
+     * @return void
+     */
     public function editUser(Request $request)
     {
         $id = request()->get('id');
@@ -80,7 +95,13 @@ class AdminController extends Controller
         }
     }
     
-    // Admin suspend user
+    // Admin suspend user    
+    /**
+     * suspend
+     *
+     * @param  mixed $request
+     * @return void
+     */
     public function suspend(Request $request)
     {
         $id = request()->get('id');
@@ -102,7 +123,13 @@ class AdminController extends Controller
         
     }
     
-    // Admin user delete function
+    // Admin user delete function    
+    /**
+     * delete
+     *
+     * @param  mixed $request
+     * @return void
+     */
     public function delete(Request $request)
     {
         $id = request()->get('id');
@@ -116,7 +143,13 @@ class AdminController extends Controller
         return View('adminPages/admin')->with('users', $users);
     }
     
-    // view details
+    // view details    
+    /**
+     * details
+     *
+     * @param  mixed $request
+     * @return void
+     */
     public function details(Request $request)
     {
     	$id = request()->get('id');
@@ -132,7 +165,7 @@ class AdminController extends Controller
     }
     
     //////////////////////////////////////////////////////////
-    //This is from an old project that I am using to refractor
+    //The following is from an old project that I am using to refractor the project
     //////////////////////////////////////////////////////////
 
 

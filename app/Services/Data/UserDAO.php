@@ -62,7 +62,12 @@ class UserDAO
     }
     
 
-    //Finds all users from the database
+    //Finds all users from the database    
+    /**
+     * getAllUsers
+     *
+     * @return void
+     */
     public function getAllUsers()
     {
         try
@@ -88,7 +93,13 @@ class UserDAO
     }
 
     //Gets a spacific user from the database
-    
+        
+    /**
+     * getUser
+     *
+     * @param  mixed $id
+     * @return void
+     */
     public function getUser($id)
     {
         try
@@ -111,7 +122,13 @@ class UserDAO
     }
     
 
-    //Edits a user from the database
+    //Edits a user from the database    
+    /**
+     * editUser
+     *
+     * @param  mixed $user
+     * @return void
+     */
     public function editUser(UserModel $user)
     {
         try
@@ -144,7 +161,13 @@ class UserDAO
     }
     
 
-    //Suspends a user from the database
+    //Suspends a user from the database    
+    /**
+     * suspend
+     *
+     * @param  mixed $id
+     * @return void
+     */
     public function suspend($id)
     {
         try 
@@ -168,7 +191,13 @@ class UserDAO
     }
     
 
-    //Deletes a user from the database
+    //Deletes a user from the database    
+    /**
+     * delete
+     *
+     * @param  mixed $id
+     * @return void
+     */
     public function delete($id)
     {
         try 
@@ -190,7 +219,14 @@ class UserDAO
         }
     }
 
-    //Adds new info to the database
+    //Adds new info to the database    
+    /**
+     * addNewInfo
+     *
+     * @param  mixed $info
+     * @param  mixed $id
+     * @return void
+     */
     public function addNewInfo(MoreInfoModel $info, $id)
     {
         try
@@ -217,7 +253,14 @@ class UserDAO
         }
     }
 
-    //Adds user portfolio to the database
+    //Adds user portfolio to the database    
+    /**
+     * addUserPortfolio
+     *
+     * @param  mixed $port
+     * @param  mixed $id
+     * @return void
+     */
     public function addUserPortfolio(UserPortfolioModel $port, $id)
     {
         try
@@ -248,7 +291,13 @@ class UserDAO
     }
     
 
-    //Gets user portfolio from the database
+    //Gets user portfolio from the database    
+    /**
+     * getUserPortfolio
+     *
+     * @param  mixed $id
+     * @return void
+     */
     public function getUserPortfolio($id)
     {
         try
@@ -271,7 +320,13 @@ class UserDAO
     }
 
 
-    //Gets user profile from the database
+    //Gets user profile from the database    
+    /**
+     * getUserProfile
+     *
+     * @param  mixed $id
+     * @return void
+     */
     public function getUserProfile($id)
     {
         try
@@ -293,7 +348,13 @@ class UserDAO
     }
     
 
-    //This is an old method that I am working on converting to use in the future
+    //This is an old method that I am working on converting to use in the future    
+    /**
+     * getGroups
+     *
+     * @param  mixed $id
+     * @return void
+     */
     public function getGroups($id){
     	try {
     		

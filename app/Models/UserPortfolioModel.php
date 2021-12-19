@@ -9,6 +9,9 @@ namespace App\Models;
 
          //Setting my public variables
 
+/**
+ * UserPortfolioModel
+ */
 class UserPortfolioModel
 {
 
@@ -20,7 +23,15 @@ class UserPortfolioModel
 
 
         //Creating my constructor for my variables
-
+    
+    /**
+     * __construct
+     *
+     * @param  mixed $gymGoals
+     * @param  mixed $gymExperience
+     * @param  mixed $workoutPrefrence
+     * @return void
+     */
     public function __construct($gymGoals, $gymExperience, $workoutPrefrence)
     {
         $this->gymGoals = $gymGoals;

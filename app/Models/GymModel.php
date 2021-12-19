@@ -1,13 +1,26 @@
 <?php
 namespace App\Models;
 
+/**
+ * gymModel
+ */
 class gymModel
 {
     private $gymID;
     private $gymName;
     private $open;
     private $memberCount;
-    private $description;
+    private $description;    
+    /**
+     * __construct
+     *
+     * @param  mixed $gymID
+     * @param  mixed $gymName
+     * @param  mixed $open
+     * @param  mixed $memberCount
+     * @param  mixed $description
+     * @return void
+     */
     public function __construct($gymID, $gymName, $open, $memberCount, $description)
     {
         $this->gymID = $gymID;

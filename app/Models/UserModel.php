@@ -14,7 +14,17 @@ class UserModel
    
 
         //Creating my constructor for my variables
-
+    
+    /**
+     * __construct
+     *
+     * @param  mixed $id
+     * @param  mixed $name
+     * @param  mixed $email
+     * @param  mixed $password
+     * @param  mixed $role
+     * @return void
+     */
     public function __construct($id,$name, $email, $password, $role)
     {
         $this->id = $id;

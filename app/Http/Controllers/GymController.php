@@ -22,7 +22,12 @@ class gymController extends Controller
 	}
 	
 	
-	// User gym view
+	// User gym view	
+	/**
+	 * usergymView
+	 *
+	 * @return void
+	 */
 	public function usergymView()
 	{
 		$bs = new gymBS();
@@ -46,7 +51,13 @@ class gymController extends Controller
 		return view('/gymPages/gymUserView')->with('gyms', $gyms);
 	}
 	
-	//User join gym
+	//User join gym	
+	/**
+	 * joingym
+	 *
+	 * @param  mixed $request
+	 * @return void
+	 */
 	public function joingym(Request $request)
 	{
 		$id = Auth::user()->id;
@@ -73,7 +84,13 @@ class gymController extends Controller
 		}
 		return view('/gymPages/gymUserView')->with('gyms', $gyms);
 	}
-	//User leave a gym
+	//User leave a gym	
+	/**
+	 * leavegym
+	 *
+	 * @param  mixed $request
+	 * @return void
+	 */
 	public function leavegym(Request $request)
 	{
 		$gymID = request()->get('gymID');
@@ -102,7 +119,13 @@ class gymController extends Controller
 		return view('gymPages/gymUserView')->with('gyms', $gyms);
 	}
 	
-	//User view gym members
+	//User view gym members	
+	/**
+	 * viewgymMembers
+	 *
+	 * @param  mixed $request
+	 * @return void
+	 */
 	public function viewgymMembers(Request $request)
 	{
 		$gymID = request()->get('gymID');

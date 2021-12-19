@@ -7,11 +7,16 @@ namespace App\Models;
  */
 class MoreInfoModel
 {
+
+    //Setting my public variables
     public $age;
     public $gender;
     public $phonenumber;
     public $address;
     
+
+
+    //Creating my constructor for my variables
     public function __construct($age, $gender, $phonenumber, $address)
     {
         $this->age = $age;

@@ -31,6 +31,13 @@ class gymDAO
     }
     
     
+
+    //Finds all gyms in the database    
+    /**
+     * getAllgyms
+     *
+     * @return void
+     */
     public function getAllgyms()
     {
         try
@@ -56,7 +63,13 @@ class gymDAO
             echo $e->getMessage();
         }
     }
-    
+        
+    /**
+     * getgym
+     *
+     * @param  mixed $id
+     * @return void
+     */
     public function getgym($id)
     {
         try
@@ -79,7 +92,13 @@ class gymDAO
             $e->getMessage();
         }
     }
-    
+        
+    /**
+     * getMemberCount
+     *
+     * @param  mixed $id
+     * @return void
+     */
     public function getMemberCount($id)
     {
         try 
@@ -91,7 +110,13 @@ class gymDAO
         {
             $e->getMessage();
         }
-    }
+    }    
+    /**
+     * addgym
+     *
+     * @param  mixed $gym
+     * @return void
+     */
     public function addgym(gymModel $gym)
     {
         try
@@ -122,7 +147,13 @@ class gymDAO
         {
             $e->getMessage();
         }
-    }
+    }    
+    /**
+     * editgym
+     *
+     * @param  mixed $gym
+     * @return void
+     */
     public function editgym(gymModel $gym)
     {
         try
@@ -151,7 +182,13 @@ class gymDAO
             echo $e->getMessage();
         } 
     }
-    
+        
+    /**
+     * deletegym
+     *
+     * @param  mixed $id
+     * @return void
+     */
     public function deletegym($id)
     {
         try 
@@ -174,7 +211,15 @@ class gymDAO
             $e->getMessage();
         }
     }
-    
+        
+    /**
+     * joingym
+     *
+     * @param  mixed $id
+     * @param  mixed $name
+     * @param  mixed $gymID
+     * @return void
+     */
     public function joingym($id, $name, $gymID)
     {
         try 
@@ -200,7 +245,14 @@ class gymDAO
             $e->getMessage();
         }
     }
-    
+        
+    /**
+     * leavegym
+     *
+     * @param  mixed $gymID
+     * @param  mixed $memberID
+     * @return void
+     */
     public function leavegym($gymID,$memberID)
     {
         try 
@@ -224,7 +276,13 @@ class gymDAO
             $e->getMessage();
         }
         
-    }
+    }    
+    /**
+     * getMembers
+     *
+     * @param  mixed $gymID
+     * @return void
+     */
     public function getMembers($gymID)
     {
         try 
@@ -266,7 +324,14 @@ class gymDAO
             $e->getMessage();
         }
     }
-    
+        
+    /**
+     * gymMemberExists
+     *
+     * @param  mixed $gymID
+     * @param  mixed $memberID
+     * @return void
+     */
     public function gymMemberExists($gymID, $memberID)
     {
         try 

@@ -1,6 +1,9 @@
 <?php
 namespace App\Models;
 
+/**
+ * JobListingModel
+ */
 class JobListingModel
 {
     private $jobID;
@@ -10,7 +13,19 @@ class JobListingModel
     private $experience;
     private $skills;
     private $description;
-    
+        
+    /**
+     * __construct
+     *
+     * @param  mixed $jobID
+     * @param  mixed $company
+     * @param  mixed $position
+     * @param  mixed $location
+     * @param  mixed $experience
+     * @param  mixed $skills
+     * @param  mixed $description
+     * @return void
+     */
     public function __construct($jobID, $company, $position, $location, $experience, $skills, $description)
     {
         $this->jobID = $jobID;
