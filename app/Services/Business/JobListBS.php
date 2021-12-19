@@ -4,6 +4,13 @@ namespace App\Services\Business;
 use App\Services\Data\JobListDAO;
 use App\Models\JobListingModel;
 
+
+
+////////////////////////////////////////////////////////////////////////////////////
+// This is an unused class from an old project that I am converting into a useable class for the project.
+////////////////////////////////////////////////////////////////////////////////////
+
+
 class JobListBS
 {
     private $service;

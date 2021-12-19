@@ -61,6 +61,8 @@ class UserDAO
         } 
     }
     
+
+    //Finds all users from the database
     public function getAllUsers()
     {
         try
@@ -84,6 +86,8 @@ class UserDAO
             echo $e->getMessage();
         }
     }
+
+    //Gets a spacific user from the database
     
     public function getUser($id)
     {
@@ -106,6 +110,8 @@ class UserDAO
         }
     }
     
+
+    //Edits a user from the database
     public function editUser(UserModel $user)
     {
         try
@@ -137,6 +143,8 @@ class UserDAO
         } 
     }
     
+
+    //Suspends a user from the database
     public function suspend($id)
     {
         try 
@@ -159,6 +167,8 @@ class UserDAO
         }
     }
     
+
+    //Deletes a user from the database
     public function delete($id)
     {
         try 
@@ -179,6 +189,8 @@ class UserDAO
             $e->getMessage();
         }
     }
+
+    //Adds new info to the database
     public function addNewInfo(MoreInfoModel $info, $id)
     {
         try
@@ -204,6 +216,8 @@ class UserDAO
             echo $e->getMessage();
         }
     }
+
+    //Adds user portfolio to the database
     public function addUserPortfolio(UserPortfolioModel $port, $id)
     {
         try
@@ -233,6 +247,8 @@ class UserDAO
         }
     }
     
+
+    //Gets user portfolio from the database
     public function getUserPortfolio($id)
     {
         try
@@ -254,6 +270,8 @@ class UserDAO
         }
     }
 
+
+    //Gets user profile from the database
     public function getUserProfile($id)
     {
         try
@@ -274,6 +292,8 @@ class UserDAO
         }
     }
     
+
+    //This is an old method that I am working on converting to use in the future
     public function getGroups($id){
     	try {
     		

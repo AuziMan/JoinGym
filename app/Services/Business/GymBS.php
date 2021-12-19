@@ -13,7 +13,7 @@ class gymBS
 
     public function getAll()
     {
-        // Instantiate UserDAO class
+        // Instantiate GymDAO class
         $this->service = new gymDAO();
         // Return array
         return $this->service->getAllgyms();

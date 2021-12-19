@@ -101,6 +101,7 @@ class gymController extends Controller
 		}
 		return view('gymPages/gymUserView')->with('gyms', $gyms);
 	}
+	
 	//User view gym members
 	public function viewgymMembers(Request $request)
 	{

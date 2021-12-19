@@ -5,6 +5,12 @@ use Carbon\Exceptions\Exception;
 use Illuminate\Support\Facades\DB;
 use App\Models\JobListingModel;
 
+
+////////////////////////////////////////////////////////////////////////////////////
+// This is an unused class from an old project that I am converting into a useable class for the project.
+////////////////////////////////////////////////////////////////////////////////////
+
+
 class JobListDAO
 {
     // Define conn string

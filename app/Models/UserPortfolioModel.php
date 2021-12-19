@@ -6,6 +6,9 @@ namespace App\Models;
  * @author AustinDriver
  *        
  */
+
+         //Setting my public variables
+
 class UserPortfolioModel
 {
 
@@ -14,6 +17,9 @@ class UserPortfolioModel
     public $gymExperience;
 
     public $workoutPrefrence;
+
+
+        //Creating my constructor for my variables
 
     public function __construct($gymGoals, $gymExperience, $workoutPrefrence)
     {

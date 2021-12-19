@@ -131,6 +131,11 @@ class AdminController extends Controller
     	
     }
     
+    //////////////////////////////////////////////////////////
+    //This is from an old project that I am using to refractor
+    //////////////////////////////////////////////////////////
+
+
     //===================Job Listing functions=================
     // Method to direct to job admin page
     public function jobAdmin()

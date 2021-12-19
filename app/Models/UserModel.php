@@ -3,12 +3,18 @@ namespace App\Models;
 
 class UserModel
 {
+
+        //Setting my public variables
+
     public $id;
     public $name;
     public $email;
     public $password;
     public $role; 
    
+
+        //Creating my constructor for my variables
+
     public function __construct($id,$name, $email, $password, $role)
     {
         $this->id = $id;

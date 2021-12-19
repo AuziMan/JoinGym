@@ -62,6 +62,7 @@ class UserController extends Controller
     }
 
 
+    //This function recives data from the form and passes it to the UserPortfolioModel and rerouts to the display page
     public function displayUserProfile(Request $request)
     {
         $id = Auth::user()->id;
@@ -105,6 +106,8 @@ class UserController extends Controller
     	
     	return View('/userPages/viewOneJob')->with('job', $job)->with('exists', $exists);
     }
+
+
     public function apply(Request $request)
     {
     	$jobID = request()->get('id');
