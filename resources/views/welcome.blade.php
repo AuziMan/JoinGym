@@ -95,7 +95,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Welcome to JoinGym
+                    Welcome to JoinGym!
                 </div>
                 <div class="titlebio">
                     Changing how gym members meet one gym at a time.
