@@ -16,7 +16,16 @@ class MoreInfoModel
     
 
 
-    //Creating my constructor for my variables
+    //Creating my constructor for my variables    
+    /**
+     * __construct
+     *
+     * @param  mixed $age
+     * @param  mixed $gender
+     * @param  mixed $phonenumber
+     * @param  mixed $address
+     * @return void
+     */
     public function __construct($age, $gender, $phonenumber, $address)
     {
         $this->age = $age;
