@@ -9,7 +9,7 @@ use App\Models\UserModel;
 use App\Models\MoreinfoModel;
 use App\Services\Business\JobListBS;
 use App\Models\JobListingModel;
-use App\Models\UserPortfolioModel;
+use App\Models\UserGymProfileModel;
 
 class UserController extends Controller
 {
@@ -46,14 +46,17 @@ class UserController extends Controller
     //Adding user gym profile
     public function addUserGymProfile(Request $request)
     {
+        
         $id = Auth::user()->id;
         
         $gymGoals = request()->get('gymGoals');
         $gymExperience = request()->get('gymExperience');
         $workoutPrefrence = request()->get('workoutPrefrence');
+
         $temp = new UserGymProfileModel($gymGoals, $gymExperience, $workoutPrefrence);
         
         $bs = new UserBS();
+
         $bs->addUserGymProfile($temp, $id);
         
         $gymprofile = $bs->getGymProfile($id);

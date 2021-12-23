@@ -99,9 +99,9 @@ Route::post('/viewOneJob', 'UserController@viewOneJob');
 Route::post('/applyJob', 'UserController@apply');
 
 //================User Portfolio Routes===============
-Route::get('/userPortfolio', function()
+Route::get('/userGymProfile', function()
 {
-    return view('/userPages/userPortfolio');
+    return view('/userPages/userGymProfile');
 });
     
 Route::post('/addUserGymProfile', 'UserController@addUserGymProfile');

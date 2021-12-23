@@ -93,7 +93,7 @@ class UserBS
         $this->service = new UserDAO();
 
         // Return array
-        return $this->service->getGymProfile($id);
+        return $this->service->getUserGymProfile($id);
     }
 
 

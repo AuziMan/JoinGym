@@ -4,7 +4,7 @@ namespace App\Services\Data;
 use App\Models\MoreInfoModel;
 use App\Models\UserModel;
 use App\Models\GroupModel;
-use App\Models\UserPortfolioModel;
+use App\Models\UserGymProfileModel;
 use Carbon\Exceptions\Exception;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
