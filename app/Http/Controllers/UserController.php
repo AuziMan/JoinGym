@@ -43,21 +43,21 @@ class UserController extends Controller
         
     }
        
-    //Adding user Portfolio
-    public function addUserPortfolio(Request $request)
+    //Adding user gym profile
+    public function addUserGymProfile(Request $request)
     {
         $id = Auth::user()->id;
         
         $gymGoals = request()->get('gymGoals');
         $gymExperience = request()->get('gymExperience');
         $workoutPrefrence = request()->get('workoutPrefrence');
-        $temp = new UserPortfolioModel($gymGoals, $gymExperience, $workoutPrefrence);
+        $temp = new UserGymProfileModel($gymGoals, $gymExperience, $workoutPrefrence);
         
         $bs = new UserBS();
-        $bs->addUserPortfolio($temp, $id);
+        $bs->addUserGymProfile($temp, $id);
         
-        $portfolio = $bs->getUserPortfolio($id);
-        return View('/userPages/displayUserPortfolio')->with('portfolio', $portfolio);
+        $gymprofile = $bs->getGymProfile($id);
+        return View('/userPages/displayUserGymProfile')->with('gymprofile', $gymprofile);
        
     }
 

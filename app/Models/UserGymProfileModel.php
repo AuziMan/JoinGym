@@ -12,7 +12,7 @@ namespace App\Models;
 /**
  * UserPortfolioModel
  */
-class UserPortfolioModel
+class UserGymProfileModel
 {
 
     public $gymGoals;

@@ -6,7 +6,7 @@
 				<div class="card-header">{{ __('Fill out the questions below to find good gym partner matches!') }}</div>
 
 				<div class="card-body">
-					<form method="POST" action="addUserPortfolio">
+					<form method="POST" action="addUserGymProfile">
 						{{csrf_field()}}
 
 						<div class="form-group row">

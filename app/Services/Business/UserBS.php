@@ -64,15 +64,7 @@ class UserBS
        // Return array
         return $this->service->addNewInfo($moreInfoData, $id);
     }
-    public function getUserPortfolio($id)
-    {
-        // Instantiate UserDAO class
-        $this->service = new UserDAO();
-
-        // Return array
-        return $this->service->getUserPortfolio($id);
-    }
-
+    
     public function getUserProfile($id)
     {
         // Instantiate UserDAO class
@@ -82,15 +74,29 @@ class UserBS
         return $this->service->getUserProfile($id);
     }
     
-    public function addUserPortfolio($userPortfolioData, $id) 
+
+    // Adds UserGymProfile
+    public function addUserGymProfile($userGymProfile, $id) 
     {
         // Instantiate UserDAO class
 
         $this->service = new UserDAO();
 
         // Return array
-        return $this->service->addUserPortfolio($userPortfolioData, $id);
+        return $this->service->addUserGymProfile($userGymProfile, $id);
     }
+
+    // Gets UserGymProfile
+    public function getGymProfile($id)
+    {
+        // Instantiate UserDAO class
+        $this->service = new UserDAO();
+
+        // Return array
+        return $this->service->getGymProfile($id);
+    }
+
+
     
     public function getgyms($id)
     {

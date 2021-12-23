@@ -13,9 +13,9 @@
 		</thead>
 		<tbody align="center"> 
             		<tr>
-            		    <td>{{$portfolio->gymGoals}}</td>
-            			<td>{{$portfolio->gymExperience}}</td>
-                    	<td>{{$portfolio->workoutPrefrence}}</td>
+            		    <td>{{$gymprofile->gymGoals}}</td>
+            			<td>{{$gymprofile->gymExperience}}</td>
+                    	<td>{{$gymprofile->workoutPrefrence}}</td>
                     	
                     </tr>
 		</tbody>

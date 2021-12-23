@@ -130,7 +130,7 @@
                             	<a class="nav-link" href="moreinfo">{{__('Additional Info')}}</a>
                             </li>
                             <li class="nav-item">
-                            	<a class="nav-link" href="userPortfolio">{{__('User Portfolio')}}</a>
+                            	<a class="nav-link" href="userGymProfile">{{__('User Gym Profile')}}</a>
                             </li>
                             @endif
                             @if(Auth::user()->role == 'customer')
@@ -145,7 +145,7 @@
                             	<a class="nav-link" href="moreinfo">{{__('Additional Info')}}</a>
                             </li>
                             <li class="nav-item">
-                            	<a class="nav-link" href="userPortfolio">{{__('User Portfolio')}}</a>
+                            	<a class="nav-link" href="userGymProfile">{{__('User Gym Profile')}}</a>
                             </li>
                              <li class="nav-item">
                             	<a class="nav-link" href="gyms">{{__('Gyms')}}</a>

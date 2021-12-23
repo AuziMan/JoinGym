@@ -104,7 +104,7 @@ Route::get('/userPortfolio', function()
     return view('/userPages/userPortfolio');
 });
     
-Route::post('/addUserPortfolio', 'UserController@addUserPortfolio');
+Route::post('/addUserGymProfile', 'UserController@addUserGymProfile');
 
 //=======================User Profile========================
 

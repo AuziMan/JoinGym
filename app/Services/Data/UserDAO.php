@@ -255,18 +255,18 @@ class UserDAO
 
     //Adds user portfolio to the database    
     /**
-     * addUserPortfolio
+     * addGymProfile
      *
      * @param  mixed $port
      * @param  mixed $id
      * @return void
      */
-    public function addUserPortfolio(UserPortfolioModel $port, $id)
+    public function addUserGymProfile(UserGymProfileModel $port, $id)
     {
         try
         {
             $values = (['userID'=> $id, 'gymGoals'=> $port->gymGoals, 'gymExperience'=> $port->gymExperience, 'workoutPrefrence'=> $port->workoutPrefrence]);
-            $result = DB::table('userportfolio')->insert($values);
+            $result = DB::table('gymprofile')->insert($values);
             
             echo $result;
             // If the selected query returns a result set
@@ -293,23 +293,23 @@ class UserDAO
 
     //Gets user portfolio from the database    
     /**
-     * getUserPortfolio
+     * getGymProfile
      *
      * @param  mixed $id
      * @return void
      */
-    public function getUserPortfolio($id)
+    public function getUserGymProfile($id)
     {
         try
         {
             
-            $UserPortfolio = DB::table('userportfolio')->where('userID', $id)->first();
+            $UserGymProfile = DB::table('gymprofile')->where('userID', $id)->first();
             
-            $gymGoals = $UserPortfolio->gymGoals;
-            $gymExperience = $UserPortfolio->gymExperience;
-            $workoutPrefrence = $UserPortfolio->workoutPrefrence;
+            $gymGoals = $UserGymProfile->gymGoals;
+            $gymExperience = $UserGymProfile->gymExperience;
+            $workoutPrefrence = $UserGymProfile->workoutPrefrence;
             
-            $temp = new UserPortfolioModel($gymGoals, $gymExperience, $workoutPrefrence);
+            $temp = new UserGymProfileModel($gymGoals, $gymExperience, $workoutPrefrence);
             
             return $temp;
         }
