@@ -20,5 +20,7 @@
                     </tr>
 		</tbody>
 	</table>
+
+	<button>Edit Gym Profile</button>
 </html>
 @endsection

@@ -98,7 +98,7 @@ Route::post('/viewOneJob', 'UserController@viewOneJob');
 
 Route::post('/applyJob', 'UserController@apply');
 
-//================User Portfolio Routes===============
+//================User Gym Profile Routes===============
 Route::get('/userGymProfile', function()
 {
     return view('/userPages/userGymProfile');
