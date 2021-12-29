@@ -33,7 +33,7 @@ class UserController extends Controller
         if($isValid)
         {
             echo("customer data added!");
-            return view('home');
+            return view('/userPages/displayUserInfo')->with('moreInfoData',$moreInfoData);
         }
         else
         {

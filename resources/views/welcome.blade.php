@@ -21,6 +21,11 @@
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
+
+                /* Fits background to size */
+                    background-size: cover;
+                    height: 100%;
+                    overflow: hidden;
             }
 
             .full-height {
@@ -75,9 +80,11 @@
             }
 
             
+
+            
         </style>
     </head>
-    <body background="../images/gymBackground.jpeg">
+    <body background="../images/gymBackground.jpeg" id="gymbg">
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -98,7 +105,7 @@
                     Welcome to JoinGym!
                 </div>
                 <div class="titlebio">
-                    Changing how gym members meet one gym at a time.
+                    Changing how gym members meet one gym at a time. 
                 <div>
                         
 
