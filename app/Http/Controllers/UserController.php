@@ -27,13 +27,15 @@ class UserController extends Controller
         $bs = new UserBS();
         
         $id = Auth::user()->id;
+
+        $name = Auth::user()->name;
         
-        $isValid = $bs->addNewInfo($moreInfoData, $id);
+        $isValid = $bs->addNewInfo($moreInfoData, $id, $name);
         
         if($isValid)
         {
-            echo("customer data added!");
-            return view('/userPages/displayUserInfo')->with('moreInfoData',$moreInfoData);
+           
+            return view('/userPages/displayUserInfo')->with('moreInfoData',$moreInfoData)->with('name', $name);
         }
         else
         {
@@ -41,6 +43,21 @@ class UserController extends Controller
             return view('moreinfo');
         }
         
+    }
+
+    public function apply(Request $request)
+    {
+    	$jobID = request()->get('id');
+    	
+    	$userID = Auth::user()->id;
+    	$exists = false;
+    	$bs = new JobListBS();
+    	
+    	$bs->apply($jobID, $userID);
+    	$job = $bs->getJob($jobID);
+	    $exists = $bs->isApplied($jobID, $userID);
+	    	    
+	    return View('/userPages/viewOneJob')->with('job', $job)->with('exists', $exists);
     }
        
     //Adding user gym profile
@@ -111,19 +128,6 @@ class UserController extends Controller
     }
 
 
-    public function apply(Request $request)
-    {
-    	$jobID = request()->get('id');
-    	
-    	$userID = Auth::user()->id;
-    	$exists = false;
-    	$bs = new JobListBS();
-    	
-    	$bs->apply($jobID, $userID);
-    	$job = $bs->getJob($jobID);
-	    $exists = $bs->isApplied($jobID, $userID);
-	    	    
-	    return View('/userPages/viewOneJob')->with('job', $job)->with('exists', $exists);
-    }
+    
     
 }

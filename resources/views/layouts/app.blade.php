@@ -19,6 +19,8 @@
     <!-- Styles-->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
+    
+
     <style>
         li 
         {
@@ -78,6 +80,7 @@
     padding-right: 100px!important;
     padding: 20px;
 }
+
 
 
 

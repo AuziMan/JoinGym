@@ -233,9 +233,8 @@ class UserDAO
         {
             $values = (['userID'=> $id, 'age'=> $info->age, 'gender'=> $info->gender, 'phonenumber' => $info->phonenumber, 'address' => $info->address]);
             $result = DB::table('moreinfo')->insert($values);
-                       // If the selected query returns a result set
 
-            
+            // If the selected query returns a result set
             if($result > 0)
             {
                 mysqli_close($this->conn);                

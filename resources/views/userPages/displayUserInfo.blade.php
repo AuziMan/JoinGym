@@ -1,28 +1,37 @@
 
-@extends('layouts.app')
+@extends('layouts.app') 
 @section('content')
 
+
+
+
+
 <html>
-	<table style="width: 1300px; height:100px" cellpadding="15" border="1" align="center" id="admin">
-		<thead>
-			<tr align="center">
-				<th>Age</th>
-				<th>Gener</th>
-				<th>Phone Number</th>
-				<th>Address</th>
 
-			</tr>
-		</thead>
-		<tbody align="center"> 
-            		<tr>
-            		    <td>{{$moreInfoData->age}}</td>
-            			<td>{{$moreInfoData->gender}}</td>
-                    	<td>{{$moreInfoData->phonenumber}}</td>
-                        <td>{{$moreInfoData->address}}</td>
-                    </tr>
-		</tbody>
-	</table>
+	<link rel="stylesheet" type="text/css" href="../resources/css/profilecss.css"/>
 
-	<button>Edit User Info</button>
+	<div class="Usercontainer d-flex justify-content-center align-items-center">
+		<div class="card">
+			<div class="upper"> <img src="https://i.imgur.com/Qtrsrk5.jpg" class="img-fluid"> </div>
+			<div class="user text-center">
+				<div class="profile"> <img src="https://i.imgur.com/JgYD2nQ.jpg" class="rounded-circle" width="80"> </div>
+			</div>
+			<div class="mt-5 text-center">
+				<h4 class="mb-0">Filler User name</h4> <span class="text-muted d-block mb-2">{{$moreInfoData->address}}</span> <button class="btn btn-primary btn-sm follow">Follow</button>
+				<div class="d-flex justify-content-between align-items-center mt-4 px-4">
+					<div class="stats">
+						<h6 class="mb-0">Age</h6> <span>{{$moreInfoData->age}}</span>
+					</div>
+					<div class="stats">
+						<h6 class="mb-0">Gender</h6> <span>{{$moreInfoData->gender}}</span>
+					</div>
+					<div class="stats">
+						<h6 class="mb-0">Phone number</h6> <span>{{$moreInfoData->phonenumber}}</span>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
 </html>
 @endsection
