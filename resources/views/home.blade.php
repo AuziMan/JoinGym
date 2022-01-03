@@ -47,7 +47,7 @@
             background-color: white;
             width: 300px;
             height: 400px;
-            margin: 20px;
+            margin: 10px;
             border-radius: 15px;
         }
 
@@ -58,6 +58,34 @@
             border-radius: 15px 15px 0 0;
 
         }
+
+        .card h2 {
+            padding: 10px;
+        }
+        
+        .card p {
+            padding: 10px;
+        }
+
+        .card a {
+            padding: 10px;
+            background-color: #041137;
+            color: white;
+            padding: 15px 20px;
+            display: block;
+            text-align: center;
+            margin: 20px 50px;
+            text-decoration: none;
+        }
+
+        .card:hover{
+            background-color: rgb(62,62,62);
+            color: white;
+            curor: pointer;
+            transform:scale(1.03);
+            transition: all 0.7s ease;
+        }
+
 
         .gym-1 {
             background-image: url('../images/gymBackground.jpeg')
@@ -79,16 +107,21 @@
             <div class="card-image gym-1"></div>
             <h2>Gym 1</h2>
             <p>This gym is great for beginner lifters</p>
+            <a href="" >Join Gym 1</a>
         </div>
         <div class="card">
             <div class="card-image gym-2"></div>
             <h2>Gym 2</h2>
             <p>This gym is great for cross-fit lifters or athletes looking to improve athletic performance</p>
+            <a href="" >Join Gym 2</a>
+
         </div>
         <div class="card">
             <div class="card-image gym-3"></div>
             <h2>Gym 3</h2>
             <p>This gym is great for body building</p>
+            <a href="" >Join Gym 3</a>
+
         </div>
     </section>
     
