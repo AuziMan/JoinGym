@@ -24,8 +24,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-15 mx-auto position-relative">
-                    <h1 class="mb-5">Welcome to JoinGym</h1>
-                    <h2>Below are a list of Gyms that you are able to join:</h2>
+                    <h1 class="mb-5">This is Gym 1</h1>
+                    <h2>This gym is great for beginner gym members that are excited about starting their fitess jouney</h2>
                     <br>
                     <br>
                 </div>

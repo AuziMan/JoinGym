@@ -107,7 +107,7 @@
             <div class="card-image gym-1"></div>
             <h2>Gym 1</h2>
             <p>This gym is great for beginner lifters</p>
-            <a href="" >Join Gym 1</a>
+            <a href="gymPage1" >Join Gym 1</a>
         </div>
         <div class="card">
             <div class="card-image gym-2"></div>

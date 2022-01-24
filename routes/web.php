@@ -113,6 +113,13 @@ Route::get('/userProfile', function()
     return view('userPages/userProfile');
 });
 
+//=======================Gym Display Pages========================
+Route::get('/gymPage1', function()
+{
+    return view('/gymPages/gym1DisplayPage');
+});
+
+
 
 //=======================Gym Routes========================
 Route::get('/admingym', 'AdminController@admingym');
