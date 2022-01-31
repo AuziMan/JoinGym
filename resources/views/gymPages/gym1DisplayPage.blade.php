@@ -24,8 +24,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-15 mx-auto position-relative">
-                    <h1 class="mb-5">This is Gym 2</h1>
-                    <h2>This is a great gym for all athletic and crossfit focused gym members</h2>
+                    <h1 class="mb-5">This is Gym 1</h1>
+                    <h2>This gym is great for beginner gym members that are excited about starting their fitess jouney</h2>
                     <br>
                     <br>
                 </div>
@@ -105,24 +105,11 @@
     <section class="container" display: flex;>
         <div class="card">
             <div class="card-image gym-1"></div>
-            <h2>Gym 1</h2>
+            <h2>Info about Gym 1</h2>
             <p>This gym is great for beginner lifters</p>
-            <a href="" >Join Gym 1</a>
+            <a href="home" >Home</a>
         </div>
-        <div class="card">
-            <div class="card-image gym-2"></div>
-            <h2>Gym 2</h2>
-            <p>This gym is great for cross-fit lifters or athletes looking to improve athletic performance</p>
-            <a href="" >Join Gym 2</a>
-
-        </div>
-        <div class="card">
-            <div class="card-image gym-3"></div>
-            <h2>Gym 3</h2>
-            <p>This gym is great for body building</p>
-            <a href="" >Join Gym 3</a>
-
-        </div>
+        
     </section>
     
 

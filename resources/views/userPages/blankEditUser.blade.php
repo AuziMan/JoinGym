@@ -45,7 +45,7 @@
                               	<select name="role" class="form-control" >
                             		<option selected="selected">Choose Role</option> 
                             		<option value="admin">Admin</option>
-									<option value="customer">Customer</option>
+									<option value="customer">Member</option>
 									<option value="suspended">Suspended</option>
 								</select>
                          	</div>

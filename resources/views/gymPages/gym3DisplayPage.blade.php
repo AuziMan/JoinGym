@@ -103,26 +103,15 @@
 
 
     <section class="container" display: flex;>
+    <section class="container" display: flex;>
         <div class="card">
             <div class="card-image gym-1"></div>
-            <h2>Gym 1</h2>
-            <p>This gym is great for beginner lifters</p>
-            <a href="" >Join Gym 1</a>
+            <h2>Info about Gym 3</h2>
+            <p>This gym is great for experienced gym members who want to put on size</p>
+            <a href="home" >Home</a>
         </div>
-        <div class="card">
-            <div class="card-image gym-2"></div>
-            <h2>Gym 2</h2>
-            <p>This gym is great for cross-fit lifters or athletes looking to improve athletic performance</p>
-            <a href="" >Join Gym 2</a>
-
-        </div>
-        <div class="card">
-            <div class="card-image gym-3"></div>
-            <h2>Gym 3</h2>
-            <p>This gym is great for body building</p>
-            <a href="" >Join Gym 3</a>
-
-        </div>
+        
+    </section>
     </section>
     
 

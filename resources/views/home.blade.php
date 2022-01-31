@@ -109,6 +109,7 @@
             <p>This gym is great for beginner lifters</p>
             <a href="gymPage1" >Join Gym 1</a>
         </div>
+        
         <div class="card">
             <div class="card-image gym-2"></div>
             <h2>Gym 2</h2>
@@ -116,6 +117,7 @@
             <a href="gymPage2" >Join Gym 2</a>
 
         </div>
+
         <div class="card">
             <div class="card-image gym-3"></div>
             <h2>Gym 3</h2>

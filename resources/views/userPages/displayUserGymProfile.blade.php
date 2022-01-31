@@ -14,7 +14,7 @@
 				<div class="profile"> <img src="https://i.imgur.com/JgYD2nQ.jpg" class="rounded-circle" width="80"> </div>
 			</div>
 			<div class="mt-5 text-center">
-				<h4 class="mb-0">Filler User name</h4> <span class="text-muted d-block mb-2"></span> <button class="btn btn-primary btn-sm follow">Follow</button>
+				<h4 class="mb-0">User Name</h4> <span class="text-muted d-block mb-2"></span> <button class="btn btn-primary btn-sm follow">Follow</button>
 				<div class="d-flex justify-content-between align-items-center mt-4 px-4">
 					<div class="stats">
 						<h6 class="mb-0">Gym Goals</h6> <span>{{$gymprofile->gymGoals}}</span>
