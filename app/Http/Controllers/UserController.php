@@ -81,6 +81,29 @@ class UserController extends Controller
        
     }
 
+    //Editng User gym profile
+    public function editUserGymProfile(Request $request)
+    {
+        $id = Auth::user()->id;
+
+        echo("In the edit profile page");
+        $gymGoals = request()->get('gymGoals');
+        $gymExperience = request()->get('gymExperience');
+        $workoutPrefrence = request()->get('workoutPrefrence');
+        $gymprofile = new UserGymProfileModel($gymGoals, $gymExperience, $workoutPrefrence);
+
+        $bs = new UserBS();
+        
+        
+        
+        $bs->editUserGymProfile($gymprofile, $id);
+  
+
+        
+        return View('/userPages/displayUserGymProfile')->with('gymprofile', $gymprofile);
+        
+    }
+
 
     //This function recives data from the form and passes it to the UserPortfolioModel and rerouts to the display page
     public function displayUserProfile(Request $request)

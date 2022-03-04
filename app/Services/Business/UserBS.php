@@ -2,6 +2,8 @@
 namespace App\Services\Business;
 
 use App\Models\UserModel;
+use App\Models\UserGymProfileModel;
+
 use App\Services\Data\UserDAO;
 
 class UserBS
@@ -84,6 +86,14 @@ class UserBS
 
         // Return array
         return $this->service->addUserGymProfile($userGymProfile, $id);
+    }
+
+    //Edit UserGymProfile
+    public function editUserGymProfile(UserGymProfileModel $gymprofile)
+    {
+        $this->service = new UserDAO();
+
+        return $this->service->editUserGymProfile($gymprofile);
     }
 
     // Gets UserGymProfile

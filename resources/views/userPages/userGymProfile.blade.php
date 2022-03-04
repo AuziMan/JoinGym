@@ -1,6 +1,22 @@
 @extends('layouts.app') @section('content')
+
+<style>
+
+
+	.GymProfileHeader{
+		text-align: center;
+		font-size: 30px;
+	}
+</style>
+
+
 <div class="container">
 	<div class="row justify-content-center">
+		<div class="GymProfileHeader">
+			<h1>Everyone needs goals for the gym!</h1>
+			<h2>Fill out the questions below to find similar gym go-ers as you!</h2>
+
+		</div>
 		<div class="col-md-8">
 			<div class="card">
 				<div class="card-header">{{ __('Fill out the questions below to find good gym partner matches!') }}</div>
@@ -54,11 +70,13 @@
 						<div class="form-group row mb-0">
 							<div class="col-md-6 offset-md-4">
 								<button type="submit" class="btn btn-primary"> {{ __('Save')}}</button>
+								
 							</div>
 						</div>
 					</form>
 				</div>
 			</div>
+			<a class="nav-link" href="editUserGymProfile">{{__('Listings Admin')}}</a>
 		</div>
 	</div>
 </div>

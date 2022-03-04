@@ -1,6 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
+
+
+<style>
+    .card{
+        border-style: dashed;
+    }
+
+
+</style>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">

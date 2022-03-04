@@ -49,7 +49,12 @@
             }
 
             .content {
+                border-radius: 25px;
                 text-align: center;
+                background-color: black;
+                padding-left: 20px;
+                padding-right: 20px;
+
             }
 
             .title {
@@ -101,6 +106,7 @@
             @endif
 
             <div class="content">
+
                 <div class="title m-b-md">
                     Welcome to JoinGym!
                 </div>

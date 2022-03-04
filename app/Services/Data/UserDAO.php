@@ -288,7 +288,35 @@ class UserDAO
             echo $e->getMessage();
         }
     }
-    
+
+
+    //Edits the User gym profile
+    public function editUserGymProfile(UserGymProfileModel $profile)
+    {
+        try 
+            {
+                $this->dbquery = "UPDATE gymprofile SET gymGoals='{$profile->getgymGoals()}'
+                                            gymExperience='{$profile->getgymExperience()}'
+                                            workoutPrefrence='{$profile->getworkoutPrefrence()}'";
+
+                $result = mysqli_query($this->conn, $this->dbquery);
+
+                if($result > 0)
+                {
+                    mysqli_close($this->conn);
+                    return true;
+                }
+                else
+                {
+                    mysqli_close($this->conn);
+                    return false;
+                }
+            }
+            catch (Exception $e)
+            {
+                echo $e->getMessage();
+            }
+    }
 
     //Gets user portfolio from the database    
     /**
@@ -317,6 +345,7 @@ class UserDAO
             $e->getMessage();
         }
     }
+
 
 
     //Gets user profile from the database    

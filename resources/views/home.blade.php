@@ -43,15 +43,15 @@
             justify-content: center;
         }
 
-        .card {
+        .gymCardHome {
             background-color: white;
-            width: 300px;
-            height: 400px;
+            width: 400px;
+            height: 500px;
             margin: 10px;
             border-radius: 15px;
         }
 
-        .card-image {
+        .gymCardHome-image {
             height: 150px;
             margin-bottom: 15px;
             background-size: cover;
@@ -59,26 +59,27 @@
 
         }
 
-        .card h2 {
+        .gymCardHome h2 {
             padding: 10px;
         }
         
-        .card p {
+        .gymCardHome p {
             padding: 10px;
         }
 
-        .card a {
+        .gymCardHome a {
+            font-size: 20px;
             padding: 10px;
             background-color: #041137;
             color: white;
             padding: 15px 20px;
             display: block;
             text-align: center;
-            margin: 20px 50px;
+            margin: 25% 25%;
             text-decoration: none;
         }
 
-        .card:hover{
+        .gymCardHome:hover{
             background-color: rgb(62,62,62);
             color: white;
             curor: pointer;
@@ -103,23 +104,23 @@
 
 
     <section class="container" display: flex;>
-        <div class="card">
-            <div class="card-image gym-1"></div>
+        <div class="gymCardHome">
+            <div class="gymCardHome-image gym-1"></div>
             <h2>Gym 1</h2>
             <p>This gym is great for beginner lifters</p>
             <a href="gymPage1" >Join Gym 1</a>
         </div>
         
-        <div class="card">
-            <div class="card-image gym-2"></div>
+        <div class="gymCardHome">
+            <div class="gymCardHome-image gym-2"></div>
             <h2>Gym 2</h2>
-            <p>This gym is great for cross-fit lifters or athletes looking to improve athletic performance</p>
+            <p>This gym is great for cross-fit athletes looking to improve athletic performance</p>
             <a href="gymPage2" >Join Gym 2</a>
 
         </div>
 
-        <div class="card">
-            <div class="card-image gym-3"></div>
+        <div class="gymCardHome">
+            <div class="gymCardHome-image gym-3"></div>
             <h2>Gym 3</h2>
             <p>This gym is great for body building</p>
             <a href="gymPage3" >Join Gym 3</a>

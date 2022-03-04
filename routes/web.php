@@ -106,6 +106,14 @@ Route::get('/userGymProfile', function()
     
 Route::post('/addUserGymProfile', 'UserController@addUserGymProfile');
 
+Route::get('/editUserGymProfile', function()
+{
+    return view('/userPages/blank_editGymProfile');
+});
+
+Route::post('/doEditUserGymProfile', 'UserController@editUserGymProfile');
+
+
 //=======================User Profile========================
 
 Route::get('/userProfile', function()

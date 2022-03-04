@@ -60,6 +60,13 @@
     padding: 15px;
 }
 
+.card{
+        border-style: dashed;
+        border-color: orange;
+
+
+    }
+
 
 
 /* #app{
@@ -70,6 +77,11 @@
     font-size: 20px;!important
 
 }
+
+.GymProfileHeader{
+		text-align: center;
+		font-size: 80px;
+	}
 
 .testimonials{
     padding-top: 30px;
@@ -91,9 +103,10 @@
 
     
 </head>
-<body style=background-color:#041137!important>  
+{{-- Changes page background color --}}
+<body style=background-color:#E1C5C4!important>  
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm" style=background-color:#781B19!important>
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm" style=background-color:#F55C57!important>
             <div class="container" id="bar-nav">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'JoinGym') }}
