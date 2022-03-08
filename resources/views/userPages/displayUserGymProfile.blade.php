@@ -27,7 +27,7 @@
 					</div>
 					
 				</div>
-				<a class="btn btn-primary btn-sm" href="editUserGymProfile">{{__('Listings Admin')}}</a>
+				<a class="btn btn-primary btn-sm" href="editUserGymProfile">{{__('Edit Profile')}}</a>
 
 			</div>
 		</div>

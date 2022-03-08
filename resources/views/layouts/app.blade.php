@@ -60,12 +60,7 @@
     padding: 15px;
 }
 
-.card{
-        border-style: dashed;
-        border-color: orange;
 
-
-    }
 
 
 
@@ -93,8 +88,9 @@
     padding: 20px;
 }
 
-
-
+.navbar-nav{
+    font-size: 22px;
+}
 
 
     </style>
@@ -157,16 +153,16 @@
                             </li>
                             <li class="nav-item">
                             	<input type="hidden" value="{{Auth::user()->id}}" name="id" id="id">
-                            	<a class="nav-link" href="blank">{{ __('Edit Profile') }}</a>
+                            	<a class="nav-link" href="blank">{{ __('Edit Profile | ') }}</a>
                             </li>
                             <li class="nav-item">
-                            	<a class="nav-link" href="moreinfo">{{__('Additional Info')}}</a>
+                            	<a class="nav-link" href="moreinfo">{{__('Additional Info | ')}}</a>
                             </li>
                             <li class="nav-item">
-                            	<a class="nav-link" href="userGymProfile">{{__('User Gym Profile')}}</a>
+                            	<a class="nav-link" href="userGymProfile">{{__('User Gym Profile | ')}}</a>
                             </li>
                              <li class="nav-item">
-                            	<a class="nav-link" href="home">{{__('Gyms')}}</a>
+                            	<a class="nav-link" href="home">{{__('Gyms | ')}}</a>
                             </li>
                             @endif
                             <li class="nav-item dropdown">

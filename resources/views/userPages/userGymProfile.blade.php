@@ -1,19 +1,51 @@
-@extends('layouts.app') @section('content')
+@extends('layouts.app') 
 
 <style>
-
 
 	.GymProfileHeader{
 		text-align: center;
 		font-size: 30px;
+		padding: 20px;
+		background: white;
+		margin-bottom: 50px;
+		border-radius: 15px;
 	}
+
+	.card-header{
+		font-size: 25px;
+		text-align: center;
+		background-color: #F55C57!important;
+		border-radius: 25px!important;
+
+	}
+
+	.card-body{
+		font-size: 17px;
+		border-radius: 25px!important;
+		
+	}
+
+	.container{
+		border-radius: 25px!important;
+
+	}
+
+	.card{
+		border-style: dashed;
+		border-radius: 25px!important;
+	}
+
+
 </style>
 
 
+
+@section('content')
 <div class="container">
 	<div class="row justify-content-center">
 		<div class="GymProfileHeader">
 			<h1>Everyone needs goals for the gym!</h1>
+			
 			<h2>Fill out the questions below to find similar gym go-ers as you!</h2>
 
 		</div>
@@ -76,7 +108,6 @@
 					</form>
 				</div>
 			</div>
-			<a class="nav-link" href="editUserGymProfile">{{__('Listings Admin')}}</a>
 		</div>
 	</div>
 </div>
