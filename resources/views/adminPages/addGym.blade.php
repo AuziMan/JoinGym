@@ -25,32 +25,7 @@
                         </div>
 
                         <div class="form-gym row">
-                            <label for="interest" class="col-md-4 col-form-label text-md-right">{{ __('Common Interest') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="interest" type="text" class="form-control @error('interest') is-invalid @enderror" name="interest"  required autocomplete="interest">
-
-                                @error('interest')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-                        
-                        <div class="form-gym row">
-                        	<label for="type" class="col-md-4 col-form-label text-md-right">gym Type</label>
-                      		<div class="col-md-6">
-                              	<select name="type" class="form-control" >
-                            		<option selected="selected">Choose gym Type</option> 
-                            		<option value="Business">Business</option>
-									<option value="Personal">Personal</option>
-								</select>
-                         	</div>
-                        </div>
-                        
-                        <div class="form-gym row">
-                            <label for="description" class="col-md-4 col-form-label text-md-right">{{ __('Description') }}</label>
+                            <label for="description" class="col-md-4 col-form-label text-md-right">{{ __('Gym Description') }}</label>
 
                             <div class="col-md-6">
                                 <input id="description" type="text" class="form-control @error('description') is-invalid @enderror" name="description"  required autocomplete="description">
@@ -62,6 +37,22 @@
                                 @enderror
                             </div>
                         </div>
+
+                        <div class="form-gym row">
+                            <label for="style" class="col-md-4 col-form-label text-md-right">{{ __('Gym style') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="style" type="text" class="form-control @error('style') is-invalid @enderror" name="style"  required autocomplete="style">
+
+                                @error('style')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+                        
+                        
                         
                         <div class="form-gym row mb-0">
                             <div class="col-md-6 offset-md-4">

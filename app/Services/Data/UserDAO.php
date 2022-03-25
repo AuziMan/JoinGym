@@ -263,7 +263,8 @@ class UserDAO
     public function addUserGymProfile(UserGymProfileModel $port, $id)
     {
         try
-        {
+        {            
+
             $values = (['userID'=> $id, 'gymGoals'=> $port->gymGoals, 'gymExperience'=> $port->gymExperience, 'workoutPrefrence'=> $port->workoutPrefrence]);
             $result = DB::table('gymprofile')->insert($values);
             
@@ -291,19 +292,23 @@ class UserDAO
 
 
     //Edits the User gym profile
-    public function editUserGymProfile(UserGymProfileModel $profile)
+    public function editUserGymProfile(UserGymProfileModel $gymProfile, $id)
     {
         try 
             {
-                $this->dbquery = "UPDATE gymprofile SET gymGoals='{$profile->getgymGoals()}'
-                                            gymExperience='{$profile->getgymExperience()}'
-                                            workoutPrefrence='{$profile->getworkoutPrefrence()}'";
+                
+                $this->dbquery = "UPDATE gymprofile SET gymGoals='{$gymProfile->getgymGoals()}',
+                                            gymExperience='{$gymProfile->getgymExperience()}',
+                                            workoutPrefrence='{$gymProfile->getworkoutPrefrence()}'
+                                            WHERE userID ='{$id}'";
 
                 $result = mysqli_query($this->conn, $this->dbquery);
 
                 if($result > 0)
                 {
                     mysqli_close($this->conn);
+                    echo "data updated";
+
                     return true;
                 }
                 else
@@ -330,13 +335,13 @@ class UserDAO
         try
         {
             
-            $UserGymProfile = DB::table('gymprofile')->where('userID', $id)->first();
+            $gymProfile = DB::table('gymprofile')->where('userID', $id)->first();
             
-            $gymGoals = $UserGymProfile->gymGoals;
-            $gymExperience = $UserGymProfile->gymExperience;
-            $workoutPrefrence = $UserGymProfile->workoutPrefrence;
+            $gymGoals = $gymProfile->gymGoals;
+            $gymExperience = $gymProfile->gymExperience;
+            $workoutPrefrence = $gymProfile->workoutPrefrence;
             
-            $temp = new UserGymProfileModel($gymGoals, $gymExperience, $workoutPrefrence);
+            $temp = new UserGymProfileModel($id, $gymGoals, $gymExperience, $workoutPrefrence);
             
             return $temp;
         }

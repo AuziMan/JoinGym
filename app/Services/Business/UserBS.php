@@ -89,11 +89,11 @@ class UserBS
     }
 
     //Edit UserGymProfile
-    public function editUserGymProfile(UserGymProfileModel $gymprofile)
+    public function editUserGymProfile($gymProfile, $id)
     {
         $this->service = new UserDAO();
 
-        return $this->service->editUserGymProfile($gymprofile);
+        return $this->service->editUserGymProfile($gymProfile, $id);
     }
 
     // Gets UserGymProfile
@@ -105,7 +105,6 @@ class UserBS
         // Return array
         return $this->service->getUserGymProfile($id);
     }
-
 
     
     public function getgyms($id)

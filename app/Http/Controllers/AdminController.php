@@ -255,12 +255,9 @@ class AdminController extends Controller
         {
             $gymID = $gym->getgymID();
             $gymName = $gym->getgymName();
-            $interest = $gym->getInterest();
-            $type = $gym->getType();
-            $memberCount = $bs->getMemberCount($gymID);
             $description = $gym->getDescription();
-            $exists = true;
-            $newgym = new gymModel($gymID, $gymName, $interest, $type, $memberCount, $description, $exists);
+            $style = $gym->getStyle();
+            $newgym = new gymModel($gymID, $gymName, $description, $style);
             array_push($gyms, $newgym);
         }
         return view('/adminPages/gymAdmin')->with('gyms', $gyms);
@@ -300,12 +297,10 @@ class AdminController extends Controller
         {
             $gymID = $gym->getgymID();
             $gymName = $gym->getgymName();
-            $interest = $gym->getInterest();
-            $type = $gym->getType();
-            $memberCount = $bs->getMemberCount($gymID);
             $description = $gym->getDescription();
+            $style = $gym->getStyle();
             $exists = true;
-            $newgym = new gymModel($gymID, $gymName, $interest, $type, $memberCount, $description, $exists);
+            $newgym = new gymModel($gymID, $gymName, $description, $style);
             array_push($gyms, $newgym);
         }
         return view('/adminPages/gymAdmin')->with('gyms', $gyms); 
@@ -314,30 +309,19 @@ class AdminController extends Controller
     //Admin add a new gym 
     public function addgym(Request $request)
     {
+        $id = 0;
         $gymName = request()->get('gymName');
-        $interest = request()->get('interest');
-        $type = request()->get('type');
         $description = request()->get('description');
+        $style = request()->get('style');
         
-        $temp = new gymModel(0, $gymName, $interest, $type, 0, $description);
+        
+        $temp = new gymModel(0, $gymName, $description, $style);
         
         $bs = new gymBS();
         $bs->addgym($temp);
         
-        $gymArr = $bs->getAll();
-        $gyms = Array();
-        foreach($gymArr as $gym)
-        {
-            $gymID = $gym->getgymID();
-            $gymName = $gym->getgymName();
-            $interest = $gym->getInterest();
-            $type = $gym->getType();
-            $memberCount = $bs->getMemberCount($gymID);
-            $description = $gym->getDescription();
-            $exists = true;
-            $newgym = new gymModel($gymID, $gymName, $interest, $type, $memberCount, $description, $exists);
-            array_push($gyms, $newgym);
-        }
+        $gyms = $bs->getAll();
+
         
         return view('/adminPages/gymAdmin')->with('gyms', $gyms);
     }
@@ -357,12 +341,10 @@ class AdminController extends Controller
         {
             $gymID = $gym->getgymID();
             $gymName = $gym->getgymName();
-            $interest = $gym->getInterest();
-            $type = $gym->getType();
-            $memberCount = $bs->getMemberCount($gymID);
             $description = $gym->getDescription();
+            $style = $gym->getStyle();
             $exists = true;
-            $newgym = new gymModel($gymID, $gymName, $interest, $type, $memberCount, $description, $exists);
+            $newgym = new gymModel($gymID, $gymName, $description, $style);
             array_push($gyms, $newgym);
         }
         return view('/adminPages/gymAdmin')->with('gyms', $gyms);

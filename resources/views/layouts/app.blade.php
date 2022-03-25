@@ -146,6 +146,7 @@
                             <li class="nav-item">
                             	<a class="nav-link" href="userGymProfile">{{__('User Gym Profile')}}</a>
                             </li>
+                            
                             @endif
                             @if(Auth::user()->role == 'customer')
                             <li class="nav-item">

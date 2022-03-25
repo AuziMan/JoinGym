@@ -7,10 +7,8 @@
 			<tr align="center">
 				<th>gym ID</th>
 				<th>gym Name</th>
-				<th>Common Interest</th>
-				<th>gym Type</th>
-				<th>Member Count</th>
 				<th>gym Description</th>
+				<th>gym style</th>
 				<th>View</th>
 				<th>Edit</th>
 				<th>Delete</th>
@@ -21,10 +19,9 @@
             		<tr>
                     	<td>{{$gym->getgymID()}}</td>
                     	<td>{{$gym->getgymName()}}</td>
-                    	<td>{{$gym->getInterest()}}</td>
-                    	<td>{{$gym->getType()}}</td>
-                    	<td>{{$gym->getMemberCount()}}</td>
                     	<td>{{$gym->getDescription()}}</td>
+						<td>{{$gym->getStyle()}}</td>
+
                 		<td>
                         	<form action="viewgym" method="post">
                             	{{csrf_field()}}

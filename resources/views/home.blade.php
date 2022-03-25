@@ -21,25 +21,45 @@
         <div class="overlay">
             <div class="container"></div>
         </div>
-        <div class="headerContainer">
-            <div class="row">
-                <div class="col-xl-15 mx-auto position-relative">
-                    <h1 class="mb-5">Welcome to JoinGym</h1>
-                    <h2>Below are a list of Gyms that you are able to join!</h2>
-                    <br>
-                    <h3 class="smallWords">Select each gym and explore what each gym group has to offer!</h3>
+        <div class="titleContainer">
+            <div class="groupGymimg"></div>
 
-                    <br>
-                    <br>
+                <div class="headerContainer">
+                    <div class="row">
+                        <div class="col-xl-15 mx-auto position-relative">
+                            <h1 class="mb-5">Welcome to JoinGym</h1>
+                            <h2>Below are a list of Gyms that you are able to join!</h2>
+                            <br>
+                            <h3 class="smallWords">Select each gym and explore what each gym group has to offer!</h3>
+
+                            <br>
+                            <br>
+                        </div>
+                    </div>
                 </div>
-                
-            </div>
         </div>
     </header>
     
 
 
     <style>
+
+        .titleContainer{
+            margin-left: 80px;
+            display: flex;
+            width: 1200px;
+            
+
+        }
+
+        .groupGymimg{
+            background-image: url('../images/groupGymimg1.png');
+            width: 500px;
+            height: 450px;
+            background-size: cover;
+            margin-left: 190px;
+
+        }
 
         .smallWords{
             font-size: 17px;
@@ -52,18 +72,20 @@
         }
 
         .masthead{
-            padding-bottom: 30px;
+
         }
 
         .headerContainer{
+            text-align: center;
             color: #041137;
             background: whitesmoke;
             margin: auto;
-            width: 950px;
-            height: 250px;
+            width: 500px;
+            height: 450px;
+            padding-bottom: 20px;
         }
 
-        .container{
+        .Cardcontainer{
             display: flex;
             justify-content: center;
             text-align: center;
@@ -109,7 +131,7 @@
         .gymCardHome:hover{
             background-color: rgb(62,62,62);
             color: white;
-            curor: pointer;
+            cursor: pointer;
             transform:scale(1.03);
             transition: all 0.7s ease;
         }
@@ -117,6 +139,8 @@
         .descTxt{
             font-size: 30px;
         }
+
+       
 
 
 
@@ -136,7 +160,7 @@
     </style>
 
 
-    <section class="container" display: flex;>
+    <section class="Cardcontainer" display: flex;>
         <div class="gymCardHome">
             <div class="gymCardHome-image gym-1"></div>
             <h2>Gym 1</h2>
@@ -161,6 +185,7 @@
 
         </div>
     </section>
+</div>
 
 
     <style>

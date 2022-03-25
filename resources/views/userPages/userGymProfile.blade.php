@@ -64,7 +64,7 @@
 							<div class="col-md-6">
 								<input id="gymGoals" type="text"
 									class="form-control @error('name') is-invalid @enderror"
-									name="gymGoals" value="{{ old('gymGoals') }}" required autocomplete="joHhistory"
+									name="gymGoals" value="{{$gymProfile->getgymGoals()}}" required autocomplete="gymGoals"
 									autofocus> @error('gymGoals') <span class="invalid-feedback"
 									role="alert"> <strong>{{ $message }}</strong>
 								</span> @enderror
@@ -78,7 +78,7 @@
 							<div class="col-md-6">
 								<input id="gymExperience" type="text"
 									class="form-control @error('name') is-invalid @enderror"
-									name="gymExperience" value="{{ old('gymExperience') }}" required autocomplete="jobSkills"
+									name="gymExperience" value="{{$gymProfile->getgymExperience()}}" required autocomplete="gymExperience"
 									autofocus> @error('gymExperience') <span class="invalid-feedback"
 									role="alert"> <strong>{{ $message }}</strong>
 								</span> @enderror
@@ -91,7 +91,7 @@
 							<div class="col-md-6">
 								<input id="workoutPrefrence" type="text"
 									class="form-control @error('workoutPrefrence') is-invalid @enderror"
-									name="workoutPrefrence" value="{{ old('workoutPrefrence') }}" required autocomplete="education"
+									name="workoutPrefrence" value="{{$gymProfile->getworkoutPrefrence()}}" required autocomplete="workoutPrefrence"
 									autofocus> @error('workoutPrefrence') <span class="invalid-feedback"
 									role="alert"> <strong>{{ $message }}</strong>
 								</span> @enderror

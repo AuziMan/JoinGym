@@ -8,9 +8,8 @@ class gymModel
 {
     private $gymID;
     private $gymName;
-    private $open;
-    private $memberCount;
-    private $description;    
+    private $description; 
+    private $style;   
     /**
      * __construct
      *
@@ -21,16 +20,24 @@ class gymModel
      * @param  mixed $description
      * @return void
      */
-    public function __construct($gymID, $gymName, $open, $memberCount, $description)
+    public function __construct($gymID, $gymName, $description, $style)
     {
         $this->gymID = $gymID;
         $this->gymName = $gymName;
-        $this->open = $open;
-        $this->memberCount = $memberCount;
         $this->description = $description;
+        $this->style = $style;
     }
     
-    
+ 
+    public function getStyle()
+    {
+        return $this->style;
+    }
+
+    public function setStyle($style)
+    {
+        return $this->$style;
+    }
  
     /**
      * @return mixed
@@ -64,29 +71,6 @@ class gymModel
         $this->gymName = $gymName;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getInterest()
-    {
-        return $this->interest;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getType()
-    {
-        return $this->type;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getMemberCount()
-    {
-        return $this->memberCount;
-    }
 
     /**
      * @return mixed
@@ -96,29 +80,7 @@ class gymModel
         return $this->description;
     }
 
-    /**
-     * @param mixed $interest
-     */
-    public function setInterest($interest)
-    {
-        $this->interest = $interest;
-    }
 
-    /**
-     * @param mixed $type
-     */
-    public function setType($type)
-    {
-        $this->type = $type;
-    }
-
-    /**
-     * @param mixed $memberCount
-     */
-    public function setMemberCount($memberCount)
-    {
-        $this->memberCount = $memberCount;
-    }
 
     /**
      * @param mixed $description

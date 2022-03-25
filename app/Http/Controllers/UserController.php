@@ -81,32 +81,55 @@ class UserController extends Controller
        
     }
 
-    //Editng User gym profile
-    public function editUserGymProfile(Request $request)
+    public function editGymProfile(Request $request)
     {
         $id = Auth::user()->id;
+        $bs = new UserBS();
 
-        echo("In the edit profile page");
+        $gymProfile = $bs->getGymProfile($id);
+
+        return View('/userPages/editGymProfile')->with('gymProfile', $gymProfile);
+
+    }
+
+    //Editng User gym profile
+    public function editUserGymProfileData(Request $request)
+    {
+        $id = Auth::user()->id;
+   
         $gymGoals = request()->get('gymGoals');
         $gymExperience = request()->get('gymExperience');
         $workoutPrefrence = request()->get('workoutPrefrence');
-        $gymprofile = new UserGymProfileModel($gymGoals, $gymExperience, $workoutPrefrence);
+
+        $temp = new UserGymProfileModel($gymGoals, $gymExperience, $workoutPrefrence);
 
         $bs = new UserBS();
-        
-        
-        
-        $bs->editUserGymProfile($gymprofile, $id);
+ 
+        $bs->editUserGymProfile($temp, $id);
   
 
-        
-        return View('/userPages/displayUserGymProfile')->with('gymprofile', $gymprofile);
+        $gymProfile = $bs->editUserGymProfile($temp, $id);
+        return View('/Home')->with('gymProfile', $gymProfile);
+
         
     }
 
 
-    //This function recives data from the form and passes it to the UserPortfolioModel and rerouts to the display page
-    public function displayUserProfile(Request $request)
+    public function displayUserGymProfile()
+    {
+        $id = Auth::user()->id;
+
+        $bs = new UserBS();
+
+        $gymProfile = $bs->getGymProfile($id);
+
+       return View('/userPages/displayUserGymProfile')->with('gymProfile', $gymProfile);
+
+    }
+
+    // This function recives data from the form and passes it to the UserPortfolioModel 
+    // and rerouts to the display page
+    public function testdisplayUserGymProfile(Request $request)
     {
         $id = Auth::user()->id;
 
@@ -116,7 +139,7 @@ class UserController extends Controller
         $temp = new UserPortfolioModel($gymGoals, $gymExperience, $workoutPrefrence);
         
         $bs = new UserBS();
-        $profile = $bs->getUserPortfolio($id);
+        $profile = $bs->getGymProfile($id);
 
         return View('/userPages/displayUserProfile')->with('profile', $profile);
 
@@ -137,6 +160,8 @@ class UserController extends Controller
     	
     	return View('/userPages/searchJobResults')->with('jobs', $jobs);
     }
+
+
     public function viewOneJob(Request $request)
     {
     	$id = request()->get('id');

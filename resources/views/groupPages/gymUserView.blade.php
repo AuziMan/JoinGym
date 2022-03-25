@@ -5,23 +5,21 @@
 	<table style="width: 1300px; height:100px" cellpadding="15" border="1" align="center" id="admin">
 		<thead>
 			<tr align="center">
+				<th>gym ID</th>
 				<th>gym Name</th>
-				<th>Common Interest</th>
-				<th>gym Type</th>
-				<th>gym Members</th>
 				<th>gym Description</th>
+				<th>gym style</th>
 				<th>View</th>
-				<th>Join/Leave</th>
+				<th>Join Gym</th>
 			</tr>
 		</thead>
 		<tbody align="center"> 
                 @foreach($gyms as $gym)
             		<tr>
+                    	<td>{{$gym->getgymID()}}</td>
                     	<td>{{$gym->getgymName()}}</td>
-                    	<td>{{$gym->getInterest()}}</td>
-                    	<td>{{$gym->getType()}}</td>
-                    	<td>{{$gym->getMemberCount()}}</td>
                     	<td>{{$gym->getDescription()}}</td>
+						<td>{{$gym->getStyle()}}</td>
             			<td>
             				<form action='viewgym' method="post">
                             	{{csrf_field()}}

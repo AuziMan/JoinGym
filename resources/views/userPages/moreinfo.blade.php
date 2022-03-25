@@ -2,9 +2,40 @@
 <style>
 
 	.UserProfileHeader{
-		font-size: 6px;
 		text-align: center;
+		font-size: 30px;
+		padding: 20px;
+		background: white;
+		margin-bottom: 50px;
+		border-radius: 15px;
 	}
+
+	.card-header{
+		font-size: 25px;
+		text-align: center;
+		background-color: #F55C57!important;
+		border-radius: 25px!important;
+
+	}
+
+	.card-body{
+		font-size: 17px;
+		border-radius: 25px!important;
+		
+	}
+
+	.container{
+		border-radius: 25px!important;
+
+	}
+
+	.card{
+		border-style: dashed;
+		border-radius: 25px!important;
+	}
+
+
+
 </style>
 
 
@@ -14,10 +45,9 @@
 		<div class="col-md-8">
 			<div class="UserProfileHeader">
 				<h1>Fill in the information below to complete your profile!</h1>
-				<h2>This allows JoinGym to more accuratly match you with other gym users!</h2>
 			</div>
 			<div class="card">
-				<div class="card-header">{{ __('More User Info') }}</div>
+				<div class="card-header">{{ __('Input some more info so we can find better gym partners for you! ') }}</div>
 
 				<div class="card-body">
 					<form method="POST" action="addNewInfo">

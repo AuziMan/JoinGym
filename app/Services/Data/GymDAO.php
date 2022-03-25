@@ -48,12 +48,9 @@ class gymDAO
             {
                 $gymID = $gym->gymID;
                 $gymName = $gym->gymName;
-                $interest = $gym->interest;
-                $type = $gym->type;
-                $memberCount = $this->getMemberCount($gymID);
                 $description = $gym->description;
-                $exists = true;
-                $newgym = new gymModel($gymID, $gymName, $interest, $type, $memberCount, $description, $exists);
+                $style = $gym->style;
+                $newgym = new gymModel($gymID, $gymName, $description, $style);
                 array_push($gymArr, $newgym);
             }
             return $gymArr;
@@ -76,14 +73,11 @@ class gymDAO
         {
             $gym = DB::table('gyms')->where('gymID', $id)->first();
             
-            $gymID = $gym->gymID;
             $gymName = $gym->gymName;
-            $interest = $gym->interest;
-            $type = $gym->type;
-            $memberCount = $this->getMemberCount($gymID);
             $description = $gym->description;
-            $exists = true;
-            $temp = new gymModel($gymID, $gymName, $interest, $type, $memberCount, $description, $exists);
+            $style = $gym->style;
+
+            $temp = new gymModel($id, $gymName, $description, $style);
         
             return $temp;
         }
@@ -121,14 +115,12 @@ class gymDAO
     {
         try
         {
-            $gymID = $gym->getgymID();
+            $id = $gym->getgymID();
             $gymName = $gym->getgymName();
-            $interest = $gym->getInterest();
-            $type = $gym->getType();
             $description = $gym->getDescription();
+            $style = $gym->getStyle();
             
-            $values = (['gymID'=>$gymID, 'gymName'=>$gymName, 'interest'=>$interest, 
-                'type'=>$type, 'description'=>$description]);
+            $values = (['gymID' =>$id, 'gymName'=>$gymName, 'description'=>$description, 'style'=>$style]);
             
             $result = DB::table('gyms')->insert($values);
             

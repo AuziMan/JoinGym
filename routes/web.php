@@ -103,15 +103,23 @@ Route::get('/userGymProfile', function()
 {
     return view('/userPages/userGymProfile');
 });
+
+Route::get('/userGymProfile', 'UserController@displayUserGymProfile');
+
     
 Route::post('/addUserGymProfile', 'UserController@addUserGymProfile');
 
-Route::get('/editUserGymProfile', function()
-{
-    return view('/userPages/blank_editGymProfile');
-});
+// Route::get('/editUserGymProfile', function()
+// {
+//     return view('/userPages/editGymProfile');
+// });
 
-Route::post('/doEditUserGymProfile', 'UserController@editUserGymProfile');
+Route::post('/editUserGymProfile', 'UserController@editGymProfile');
+
+Route::post('/doEditUserGymProfile', 'UserController@editUserGymProfileData');
+
+Route::get('/displayUserGymProfile', 'UserController@testdisplayUserGymProfile');
+
 
 
 //=======================User Profile========================
