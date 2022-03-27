@@ -58,6 +58,48 @@
 						{{csrf_field()}}
 
 						<div class="form-group row">
+                            <label for="gymGoals" class="col-md-4 col-form-label text-md-right">{{ __('gymGoals') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="gymGoals" type="text" class="form-control @error('gymGoals') is-invalid @enderror" name="gymGoals" required autocomplete="gymGoals" autofocus>
+
+                                @error('gymGoals')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="gymExperience" class="col-md-4 col-form-label text-md-right">{{ __('gymExperience') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="gymExperience" type="text" class="form-control @error('gymExperience') is-invalid @enderror" name="gymExperience"  required autocomplete="gymExperience">
+
+                                @error('gymExperience')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row">
+                            <label for="workoutPrefrence" class="col-md-4 col-form-label text-md-right">{{ __('workoutPrefrence') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="workoutPrefrence" type="text" class="form-control @error('workoutPrefrence') is-invalid @enderror" name="workoutPrefrence"  required autocomplete="location">
+
+                                @error('workoutPrefrence')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+						{{-- <div class="form-group row">
 							<label for="name" class="col-md-4 col-form-label text-md-left">
 							{{__('Goals for the gym') }}</label>
 
@@ -96,7 +138,7 @@
 									role="alert"> <strong>{{ $message }}</strong>
 								</span> @enderror
 							</div>
-						</div>
+						</div> --}}
 
 						
 						<div class="form-group row mb-0">

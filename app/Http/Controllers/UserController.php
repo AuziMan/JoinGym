@@ -77,7 +77,7 @@ class UserController extends Controller
         $bs->addUserGymProfile($temp, $id);
         
         $gymprofile = $bs->getGymProfile($id);
-        return View('/userPages/displayUserGymProfile')->with('gymprofile', $gymprofile);
+        return View('/home')->with('gymprofile', $gymprofile);
        
     }
 

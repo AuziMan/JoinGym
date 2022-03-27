@@ -297,9 +297,9 @@ class UserDAO
         try 
             {
                 
-                $this->dbquery = "UPDATE gymprofile SET gymGoals='{$gymProfile->getgymGoals()}',
-                                            gymExperience='{$gymProfile->getgymExperience()}',
-                                            workoutPrefrence='{$gymProfile->getworkoutPrefrence()}'
+                $this->dbquery = "UPDATE gymprofile SET gymGoals='{$gymProfile->gymGoals}',
+                                            gymExperience='{$gymProfile->gymExperience}',
+                                            workoutPrefrence='{$gymProfile->workoutPrefrence}'
                                             WHERE userID ='{$id}'";
 
                 $result = mysqli_query($this->conn, $this->dbquery);
@@ -341,7 +341,7 @@ class UserDAO
             $gymExperience = $gymProfile->gymExperience;
             $workoutPrefrence = $gymProfile->workoutPrefrence;
             
-            $temp = new UserGymProfileModel($id, $gymGoals, $gymExperience, $workoutPrefrence);
+            $temp = new UserGymProfileModel($gymGoals, $gymExperience, $workoutPrefrence);
             
             return $temp;
         }

@@ -78,7 +78,7 @@
         .headerContainer{
             text-align: center;
             color: #041137;
-            background: whitesmoke;
+            background-color: #A9A9A9;
             margin: auto;
             width: 500px;
             height: 450px;
@@ -129,7 +129,7 @@
         }
 
         .gymCardHome:hover{
-            background-color: rgb(62,62,62);
+            background-color: #A9A9A9;
             color: white;
             cursor: pointer;
             transform:scale(1.03);

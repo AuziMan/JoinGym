@@ -100,7 +100,7 @@
     
 </head>
 {{-- Changes page background color --}}
-<body style=background-color:#E1C5C4!important>  
+<body style=background-color:#EFEFEF!important>  
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm" style=background-color:#F55C57!important>
             <div class="container" id="bar-nav">
@@ -160,7 +160,7 @@
                             	<a class="nav-link" href="moreinfo">{{__('Additional Info | ')}}</a>
                             </li>
                             <li class="nav-item">
-                            	<a class="nav-link" href="userGymProfile">{{__('User Gym Profile | ')}}</a>
+                            	<a class="nav-link" href="userGymProfileSetup">{{__('User Gym Profile | ')}}</a>
                             </li>
                              <li class="nav-item">
                             	<a class="nav-link" href="home">{{__('Gyms | ')}}</a>
