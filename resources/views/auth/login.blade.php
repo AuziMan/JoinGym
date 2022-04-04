@@ -4,12 +4,10 @@
 
 .cardTest{
 
-    margin-top: 100px;
+    margin-top: 50px;
     height: 351px;
     width: 1000px;
-    border-style: dashed;
     display: flex;
-
 
 }
 
@@ -22,7 +20,6 @@
 .card-header{
     z-index: 3;
     height: 600px;
-    border-color: aqua;
     font-size: 75px;
     text-align: center;
     background-color: #F55C57!important;
@@ -31,23 +28,25 @@
 .loginHeader{
     text-align: center;
     width: 90%;
-    font-size: 30px;
+    font-size: 50px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-style: dashed;
+    background-color: #A9A9A9;
+    border-radius: 15px;
 }
 
 .container{
     width: 1200px;
-    border-style: dashed;
-    border-color: #F55C57;
 
 }
 
 .loginImages{
     background-image: url('../images/groupGymimg1.png');
     width: 500px;
-    height: 450px;
+    height: 370px;
+    background-size: cover;
 }
+
+
 
 
 
@@ -126,7 +125,7 @@
 
 
                 <div class="card">
-                    <div class="card-body">
+                    <div class="cardImgbody">
                            <div class="loginImages">
                            </div>
                     </div>

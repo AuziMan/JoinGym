@@ -52,14 +52,14 @@
     }
 
     .card{
-        margin-top: -85px;
+        margin-top: -15px;
         width: 800px;
         border: none;
         border-radius: 15px;
         padding: 5px;
         background-color: #fff;
         position: relative;
-        height: 400px;
+        height: 500px;
 
     }
 
@@ -90,10 +90,11 @@
     
     .upper img {
         width: 780px;
-        height: 200px;
+        height: 400px;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-        
+        background-size: cover;
+
     }
 
     .Profileupper{
@@ -136,7 +137,12 @@
     }
     
     .stats span {
-        font-size: 25px;
+        font-size: 30px;
+
+    }
+
+    .stats{
+        padding: 5px;
     }
 
     
@@ -156,12 +162,14 @@
     background: rgb(0, 82, 204);
     cursor: pointer;
     height: 32px;
+    width: 20px;
     line-height: 32px;
     padding: 0px 12px;
     vertical-align: middle;
     width: auto;
     font-size: 14px;
     color: rgb(255, 255, 255);
+    margin-top: 20px;
 }
 
     .viewProfileBtn:hover {
@@ -171,4 +179,8 @@
         color: rgb(255, 255, 255);
     }
 
+    .profileName{
+        font-size: 20px;
+        padding: 0;
+    }
 

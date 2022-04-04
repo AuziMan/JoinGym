@@ -150,6 +150,12 @@ Route::get('/gymPage3', function()
     return view('/gymPages/gym3DisplayPage');
 });
 
+//========================User Display Pages======================
+Route::get('/gym1UserPage', function() 
+{
+    return view('/gympages/gym1UserPage');
+});
+
 
 
 //=======================Gym Routes========================
