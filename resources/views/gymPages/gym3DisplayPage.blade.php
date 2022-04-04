@@ -24,7 +24,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-15 mx-auto position-relative">
-                    <div class="gym2Header">    
+                    <div class="gym3Header">    
                         <h1 class="mb-5">This is Gym 3</h1>
                         <h2>This gym is great for athletes and crossfit gym members!</h2>
                         <br>
@@ -40,10 +40,13 @@
 
     <style>
 
-        .gym2Header{
+        .gym3Header{
             width: 670px;
-            background-color: #041137;
-            padding: 15px;
+            height: 200px;
+            background-color: #8B8789;
+            padding: 10px;
+            border-radius: 15px;
+
 
         }
 
@@ -53,18 +56,17 @@
         }
 
         .card {
-            background-color: white;
+            background-color: #A4A4A4;
             width: 1200px;
             height: 600px;
             margin: 10px;
-            sradius: 15px;
+            radius: 15px;
         }
 
         .card-image {
             height: 950px;
-            margin-bottom: 15px;
+            margin-bottom: -15px;
             background-size: 700px;
-            border-radius: 15px 15px 0 0;
 
         }
 
@@ -80,6 +82,8 @@
 
         .card h2, p{
             font-size: 35px;
+            color: #F55C57
+
         }
 
         .card a {
@@ -98,7 +102,7 @@
             color: white;
             curor: pointer;
             transform:scale(1.03);
-            transition: all 0.7s ease;
+            transition: all 1.7s ease;
         }
 
         .homeLink{
@@ -115,6 +119,15 @@
           
 
         }
+
+        .textContainer{
+            z-index: auto;
+            background: white;
+            margin: -15px 105px;
+            border-radius: 15px;
+
+        }
+
         
 
         .gym-1 {
@@ -122,11 +135,11 @@
         }
 
         .gym-2{
-            background-image: url('../images/gymBackground.jpeg')
+            background-image: url('../images/cross-fitGym.jpg')
         }
 
         .gym-3{
-            background-image: url('../images/gymBackground.jpeg')
+            background-image: url('../images/B-B_G.jpg')
         }
 
     </style>
@@ -134,9 +147,11 @@
 
     <section class="container" display: flex;>
         <div class="card">
-            <div class="card-image gym-1"></div>
-            <h2>Info about Gym 3</h2>
-            <p>This gym is great for intermediate to advanced lifters</p>
+            <div class="card-image gym-3"></div>
+            <div class="textContainer">
+                <h2>Info about Gym 3</h2>
+                <p>This gym is great for intermediate to advanced lifters</p>
+            </div>
             <ul class="bottomButtons">
                 <div class="homeLink">
                     <a href="home" >Find another Gym</a>

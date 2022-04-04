@@ -25,12 +25,12 @@
                         </div>
 
                         <div class="form-gym row">
-                            <label for="interest" class="col-md-4 col-form-label text-md-right">{{ __('Common Interest') }}</label>
+                            <label for="description" class="col-md-4 col-form-label text-md-right">{{ __('Description') }}</label>
 
                             <div class="col-md-6">
-                                <input id="interest" value="{{$gym->getInterest()}}" type="text" class="form-control @error('interest') is-invalid @enderror" name="interest"  required autocomplete="interest">
+                                <input id="description" value="{{$gym->getDescription()}}" type="text" class="form-control @error('description') is-invalid @enderror" name="description"  required autocomplete="description">
 
-                                @error('interest')
+                                @error('description')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -43,19 +43,21 @@
                       		<div class="col-md-6">
                               	<select name="type" class="form-control" >
                             		<option selected="selected">Choose gym Type</option> 
-                            		<option value="Business">Business</option>
-									<option value="Personal">Personal</option>
+                            		<option value="Beginner">Beginner</option>
+									<option value="Body Building">Body Building</option>
+									<option value="Athletics">Athletics</option>
+
 								</select>
                          	</div>
                         </div>
                         
                         <div class="form-gym row">
-                            <label for="description" class="col-md-4 col-form-label text-md-right">{{ __('Description') }}</label>
+                            <label for="style" class="col-md-4 col-form-label text-md-right">{{ __('Style') }}</label>
 
                             <div class="col-md-6">
-                                <input id="description" value="{{$gym->getDescription()}}" type="text" class="form-control @error('description') is-invalid @enderror" name="description"  required autocomplete="description">
+                                <input id="style" value="{{$gym->getStyle()}}" type="text" class="form-control @error('style') is-invalid @enderror" name="style"  required autocomplete="style">
 
-                                @error('description')
+                                @error('style')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>

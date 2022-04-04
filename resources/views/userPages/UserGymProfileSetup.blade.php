@@ -15,7 +15,7 @@
             display: flex;
             justify-content: center;
             text-align: center;
-			margin-top: -350px;
+			margin-top: -280px;
 
         }
 
@@ -92,6 +92,8 @@
 		<div class="topcard">
 			<div class="mt-5 text-center">
 					<div class="titleText">	
+                        <h1>Welcome back, {{ Auth::user()->name }}</h1>
+                        <br>
 						<h2>Having a to-the-point Gym profile is key for finding other users</h2>
 					</div>
 
@@ -100,6 +102,7 @@
 							questions any gym member needs to ask themselves: 
 						</h2>
 					</div>
+                    
             </div>
 		</div>
 	</div>
@@ -132,27 +135,46 @@
     </section>
 
 	<div class="Usercontainer d-flex justify-content-center align-items-center">
-		<div class="setupCard">
-			<div class="upper"> <img src="../images/bluebg.jpg" class="img-fluid"> </div>
+		<div class="setupCardL">
+			<div class="Profileupper"> <img src="../images/bluebg.jpg" class="img-fluid"> </div>
 			<div class="user text-center">
 				<div class="profile"> <img src="../images/marioPFP.jpeg" class="rounded-circle" width="80"> </div>
 
 			</div>
 			<div class="mt-5 text-center">
-				<h4 class="mb-0">{{ Auth::user()->name }}</h4> <span class="text-muted d-block mb-2"></span> 
-				<button class="btn btn-primary btn-sm follow">Follow</button>
+                <div class="btmCardText">
+                    <h3>Once your profile is created, click here to view it!</h3>
+
+                </div>
 				<div class="d-flex justify-content-between align-items-center mt-4 px-4">
 
 					
 				</div>
-						
-                        <a href="userGymProfilePage">{{__('Add profile ')}}</a>
 
-                       <br>
-
-                         <a href="userGymProfile">{{__('View profile ')}}</a>
+                        <a class="viewProfileBtn" href="userGymProfile">View Profile</a>
             </div>
 		</div>
+
+        <div class="setupCardR">
+			<div class="Profileupper"> <img src="../images/bluebg.jpg" class="img-fluid"> </div>
+			<div class="user text-center">
+				<div class="profile"> <img src="../images/marioPFP.jpeg" class="rounded-circle" width="80"> </div>
+
+			</div>
+			<div class="mt-5 text-center">
+                <div class="btmCardText">
+                    <h3>If you have not yet created a gym profile, click the 'Add profile' button to get started!</h3>
+
+                </div>
+				<div class="d-flex justify-content-between align-items-center mt-4 px-4">
+
+				</div>						
+                        <a class="viewProfileBtn" href="userGymProfilePage">Add Profile</a>
+
+
+            </div>
+		</div>
+
 	</div>
 
     

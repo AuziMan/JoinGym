@@ -6,14 +6,17 @@
 
     margin-top: 100px;
     height: 351px;
-    width: 600px;
-    margin-left: 50px;
+    width: 1000px;
+    border-style: dashed;
+    display: flex;
 
 
 }
 
 .card{
+    margin: 10px;
     height: 370px;
+    width: 500px;
 }
 
 .card-header{
@@ -26,18 +29,33 @@
 }
 
 .loginHeader{
-    margin-left: 65px;
+    text-align: center;
+    width: 90%;
     font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-style: dashed;
 }
+
+.container{
+    width: 1200px;
+    border-style: dashed;
+    border-color: #F55C57;
+
+}
+
+.loginImages{
+    background-image: url('../images/groupGymimg1.png');
+    width: 500px;
+    height: 450px;
+}
+
+
 
 </style>
 
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
             <div class="loginHeader">
                 <p>Login below to begin creating your profile!</p>
             </div>
@@ -105,8 +123,14 @@
                         </form>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
+
+
+                <div class="card">
+                    <div class="card-body">
+                           <div class="loginImages">
+                           </div>
+                    </div>
+                </div>
+            </div>        
 </div>
 @endsection

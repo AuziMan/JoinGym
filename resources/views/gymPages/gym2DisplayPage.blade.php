@@ -42,8 +42,11 @@
 
         .gym2Header{
             width: 670px;
-            background-color: #041137;
-            padding: 15px;
+            height: 200px;
+            background-color: #8B8789;
+            padding: 10px;
+            border-radius: 15px;
+
 
         }
 
@@ -53,8 +56,8 @@
         }
 
         .card {
-            background-color: white;
-            width: 900px;
+            background-color: #A4A4A4;
+            width: 1200px;
             height: 600px;
             margin: 10px;
             sradius: 15px;
@@ -62,9 +65,8 @@
 
         .card-image {
             height: 950px;
-            margin-bottom: 15px;
-            background-size: 700px;
-            border-radius: 15px 15px 0 0;
+            margin-bottom: -35px;
+            background-size: cover;
 
         }
 
@@ -80,6 +82,8 @@
 
         .card h2, p{
             font-size: 35px;
+            color: #F55C57
+
         }
 
         .card a {
@@ -98,7 +102,7 @@
             color: white;
             curor: pointer;
             transform:scale(1.03);
-            transition: all 0.7s ease;
+            transition: all 1.7s ease;
         }
 
         .homeLink{
@@ -106,7 +110,7 @@
         }
 
         .viewMembers{
-            margin-left: 600px;
+            margin-left: 800px;
         }
 
         .bottomButtons a{
@@ -115,6 +119,15 @@
           
 
         }
+
+        .textContainer{
+            z-index: auto;
+            background: white;
+            margin: 0px 105px;
+            border-radius: 15px;
+
+        }
+
         
 
         .gym-1 {
@@ -122,7 +135,7 @@
         }
 
         .gym-2{
-            background-image: url('../images/gymBackground.jpeg')
+            background-image: url('../images/cross-fitGym.jpg')
         }
 
         .gym-3{
@@ -134,9 +147,11 @@
 
     <section class="container" display: flex;>
         <div class="card">
-            <div class="card-image gym-1"></div>
-            <h2>Info about Gym 2</h2>
-            <p>This gym is great for intermediate to advanced lifters</p>
+            <div class="card-image gym-2"></div>
+            <div class="textContainer">
+                <h2>Info about Gym 2</h2>
+                <p>This gym is great for intermediate to advanced lifters</p>
+            </div>
             <ul class="bottomButtons">
                 <div class="homeLink">
                     <a href="home" >Find another Gym</a>

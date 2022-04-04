@@ -11,24 +11,44 @@
 
     .topcard{
         background-color: #8B8789;
-        margin-top: -400px;
+        margin-top: -350px;
         width: 800px;
         border: none;
         border-radius: 15px;
-        padding: 2px;
+        padding: 3px;
         position: relative;
-        height: 200px;
+        height: 270px;
     }
 
-    .setupCard{
+    .setupCardL{
         margin-top: -100px;
-        width: 800px;
+        width: 400px;
         border: none;
         border-radius: 15px;
         padding: 5px;
-        background-color: #fff;
+        background-color: #8B8789;
         position: relative;
-        height: 400px
+        height: 300px;
+        color: #fff;
+        
+    }
+
+    .setupCardR{
+        margin-top: -100px;
+        margin-left: 50px;
+        width: 400px;
+        border: none;
+        border-radius: 15px;
+        padding: 5px;
+        background-color: #8B8789;
+        position: relative;
+        height: 300px;
+        color: #fff;
+
+    }
+
+    .btmCardText h3{
+        font-size: 17px;
     }
 
     .card{
@@ -56,6 +76,8 @@
         color: #fff;
     }
 
+    
+
 
     
     .upper {
@@ -73,6 +95,21 @@
         border-top-right-radius: 10px;
         
     }
+
+    .Profileupper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .Profileupper img{
+        width: 780px;
+        height: 100px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    
     
     
     
@@ -103,5 +140,35 @@
     }
 
     
+.viewProfileBtn{
+
+    display: inline-block;
+    outline: none;
+    border-width: 0px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: inherit;
+    font-weight: 500;
+    max-width: 100%;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.1s ease-out 0s, box-shadow 0.15s cubic-bezier(0.47, 0.03, 0.49, 1.38) 0s;
+    background: rgb(0, 82, 204);
+    cursor: pointer;
+    height: 32px;
+    line-height: 32px;
+    padding: 0px 12px;
+    vertical-align: middle;
+    width: auto;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+}
+
+    .viewProfileBtn:hover {
+        background: rgb(0, 101, 255);
+        text-decoration: inherit;
+        transition-duration: 0s, 0.15s;
+        color: rgb(255, 255, 255);
+    }
 
 
