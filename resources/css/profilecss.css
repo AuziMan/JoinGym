@@ -11,13 +11,14 @@
 
     .topcard{
         background-color: #8B8789;
-        margin-top: -350px;
+        margin-top: -330px;
         width: 800px;
         border: none;
         border-radius: 15px;
         padding: 3px;
         position: relative;
-        height: 270px;
+        height: 300px;
+
     }
 
     .setupCardL{
@@ -26,11 +27,11 @@
         border: none;
         border-radius: 15px;
         padding: 5px;
-        background-color: #8B8789;
+        background-color: #fff;
         position: relative;
         height: 300px;
-        color: #fff;
-        
+        font-family: 'Oswald', sans-serif;
+
     }
 
     .setupCardR{
@@ -40,10 +41,10 @@
         border: none;
         border-radius: 15px;
         padding: 5px;
-        background-color: #8B8789;
+        background-color: #fff;
         position: relative;
         height: 300px;
-        color: #fff;
+        font-family: 'Oswald', sans-serif;
 
     }
 
@@ -63,17 +64,28 @@
 
     }
 
-  
+    .titleText h1 {
+        font-size: 45px;
+        color: #fff;
+        font-family: 'Oswald', sans-serif;
+
+
+    }
 
     .titleText h2 {
         font-size: 35px;
         color: #fff;
+        font-family: 'Oswald', sans-serif;
+
 
     }
 
     .topbody h2 {
-        font-size: 15px;
+        font-size: 17px;
         color: #fff;
+        font-family: 'Oswald', sans-serif;
+        padding: 20px 100px;;
+
     }
 
     
@@ -84,13 +96,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        overflow: hidden;
         
     }
     
     .upper img {
         width: 780px;
-        height: 400px;
+        height: 260px;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         background-size: cover;
@@ -110,10 +121,7 @@
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
-    
-    
-    
-    
+
     .profile img {
         height: 80px;
         width: 80px;
@@ -138,11 +146,16 @@
     
     .stats span {
         font-size: 30px;
-
     }
 
     .stats{
         padding: 5px;
+        margin-left: 20px;
+    }
+
+    .statsContainer{
+        border-radius: 15px;
+        background-color:#F55C57;
     }
 
     
@@ -170,6 +183,7 @@
     font-size: 14px;
     color: rgb(255, 255, 255);
     margin-top: 20px;
+    margin-right: 15px;
 }
 
     .viewProfileBtn:hover {
@@ -180,7 +194,7 @@
     }
 
     .profileName{
-        font-size: 20px;
-        padding: 0;
+        font-size: 25px;
+        padding: 3;
     }
 

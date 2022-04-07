@@ -4,6 +4,10 @@
 
 <html>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Oswald:wght@500&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
 
 	<style>
 
@@ -25,6 +29,8 @@
             height: 500px;
             margin: 10px;
             border-radius: 15px;
+            font-family: 'Oswald', sans-serif;
+
         }
 
         .gymProfileCard-image {
@@ -67,11 +73,9 @@
             font-size: 30px;
         }
 
-       
+        
 
-
-
-
+  
         .gym-1 {
             background-image: url('../images/gymBackground.jpeg')
         }

@@ -79,10 +79,8 @@
 
         }
 
-        
-
-        .masthead{
-
+        .midWords{
+            padding: 15px;
         }
 
         .headerContainer{
@@ -243,6 +241,32 @@
         <div class="showcaseTitle">
             <h1>Read a bit about each gym below!</h1>
         </div>
+
+        <div class="gym1InfoBody">
+            <div class="gymDisplayHome-image gym-1">
+                <div class="gym1DisplayContainer">
+                    <div class="row">
+                        <div class="col-xl-15 mx-auto position-relative">
+                            <h1 class="titleText">Beginner Gym</h1>
+
+                            <h2 class="midWords">Beginner Gym is the perfect gym subgroup for those that are new to 
+                                the gym world.     
+                            </h2>
+                            <br>
+                            <h3 class="smallWords">Select each gym and explore what each gym group has to offer!</h3>
+
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <br>
+        <br>
 
         <div class="gym1InfoBody">
             <div class="gymDisplayHome-image gym-1">

@@ -58,7 +58,7 @@
 						{{csrf_field()}}
 
 						<div class="form-group row">
-                            <label for="gymGoals" class="col-md-4 col-form-label text-md-right">{{ __('gymGoals') }}</label>
+                            <label for="gymGoals" class="col-md-4 col-form-label text-md-right">{{ __('Gym Goals') }}</label>
 
                             <div class="col-md-6">
                                 <input id="gymGoals" type="text" class="form-control @error('gymGoals') is-invalid @enderror" name="gymGoals" required autocomplete="gymGoals" autofocus>
@@ -72,7 +72,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="gymExperience" class="col-md-4 col-form-label text-md-right">{{ __('gymExperience') }}</label>
+                            <label for="gymExperience" class="col-md-4 col-form-label text-md-right">{{ __('Gym Experience') }}</label>
 
                             <div class="col-md-6">
                                 <input id="gymExperience" type="text" class="form-control @error('gymExperience') is-invalid @enderror" name="gymExperience"  required autocomplete="gymExperience">
@@ -86,7 +86,7 @@
                         </div>
                         
                         <div class="form-group row">
-                            <label for="workoutPrefrence" class="col-md-4 col-form-label text-md-right">{{ __('workoutPrefrence') }}</label>
+                            <label for="workoutPrefrence" class="col-md-4 col-form-label text-md-right">{{ __('Workout Prefrence') }}</label>
 
                             <div class="col-md-6">
                                 <input id="workoutPrefrence" type="text" class="form-control @error('workoutPrefrence') is-invalid @enderror" name="workoutPrefrence"  required autocomplete="location">

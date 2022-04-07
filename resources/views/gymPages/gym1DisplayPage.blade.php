@@ -8,6 +8,10 @@
 <html>
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Oswald:wght@500&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
     <title>Home - Brand</title>
@@ -25,11 +29,12 @@
             <div class="row">
                 <div class="col-xl-15 mx-auto position-relative">
                     <div class="gym1Header">    
-                        <h1 class="mb-5">This is Gym 1</h1>
-                        <h2>This gym is great for beginner gym members that are excited about starting their fitess jouney</h2>
+                        <h1 class="mb-5">Gym 1 || Beginners</h1>
+                        
                         <br>
                         <br>
                     </div>
+                    <br>
                 </div>
                 
             </div>
@@ -41,30 +46,27 @@
     <style>
 
         .gym1Header{
-            width: 670px;
-            height: 200px;
-            background-color: #8B8789;
-            padding: 10px;
+            width: 370px;
+            height: 100px;
+            background-color: #353535;
+            padding: 25px;
             border-radius: 15px;
-
-
         }
 
         .container{
             display: flex;
             justify-content: center;
+            font-family: 'Oswald', sans-serif;
         }
 
         .card {
-            background-color: #A4A4A4;
             width: 1200px;
             height: 600px;
-            margin: 10px;
-            radius: 15px;
+            radius: 15px;    
         }
 
         .card-image {
-            height: 750px;
+            height: 550px;
             margin-bottom: -35px;
             background-size: cover;
 
@@ -73,17 +75,20 @@
         .card h2 {
             padding: 10px;
             text-align: center;
+            font-size: 40px;
         }
         
-        .card p {
-            padding: 10px;
+        .card p{
+            font-size: 35px;
+            color: #F55C57;
             text-align: center;
         }
 
-        .card h2, p{
-            font-size: 35px;
-            color: #F55C57
-
+        .card h3 {
+            text-align: center;
+            font-size: 25px;
+            color: #F55C57;
+            padding: 15px;
         }
 
         .card a {
@@ -99,8 +104,6 @@
 
         .card:hover{
             background-color: rgb(62,62,62);
-            color: white;
-            curor: pointer;
             transform:scale(1.03);
             transition: all 1.7s ease;
         }
@@ -111,55 +114,51 @@
 
         .viewMembers{
             margin-left: 800px;
+            
         }
 
         .bottomButtons a{
             float: left;
-            font-size: 14px;
-          
-
+            font-size: 19px;
+            background: #F55C57;
         }
 
         .textContainer{
             z-index: auto;
             background: white;
-            margin: 0px 105px;
+            margin: 100px 105px;
             border-radius: 15px;
-
+            height: 170px;
         }
-
-        
 
         .gym-1 {
             background-image: url('../images/gymBackground.jpeg')
         }
 
-        .gym-2{
-            background-image: url('../images/gymBackground.jpeg')
-        }
-
-        .gym-3{
-            background-image: url('../images/gymBackground.jpeg')
-        }
+        
 
     </style>
 
 
     <section class="container" display: flex;>
         <div class="card">
-            <div class="card-image gym-1"></div>
-            <div class="textContainer">
-                <h2>Info about Gym 1</h2>
-                <p>This gym is great for beginner lifters</p>
+            <div class="card-image gym-1">
+                <div class="textContainer">
+                    <h2>Info about Gym 1 || Beginners</h2>
+                    <h3>
+                        This gym is geared twords athlets and crossfit gym members. Improving athletic performance can imporve 
+                        confidence and the chances of gaining endorcements.
+                    </h3>
+                </div>
+                <ul class="bottomButtons">
+                    <div class="homeLink">
+                        <a href="home" >Find another Gym</a>
+                    </div>
+                    <div class="viewMembers">
+                        <a href="gym1UserPage" >Join Gym!</a>
+                    </div>
+                </ul>
             </div>
-            <ul class="bottomButtons">
-                <div class="homeLink">
-                    <a href="home" >Find another Gym</a>
-                </div>
-                <div class="viewMembers">
-                    <a href="gym1UserPage" >Join Gym!</a>
-                </div>
-            </ul>
         </div>
         
     </section>
