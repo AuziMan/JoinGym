@@ -46,6 +46,7 @@
                 position: absolute;
                 right: 10px;
                 top: 18px;
+
             }
 
             .content {
@@ -71,9 +72,10 @@
             }
 
             .links > a {
-                color: white;
+                color: #E74C3C;
+                
                 padding: 0 25px;
-                font-size: 25px;
+                font-size: 35px;
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;

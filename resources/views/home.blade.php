@@ -8,6 +8,9 @@
 <html>
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Oswald:wght@500&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
     <title>Home - Brand</title>
@@ -27,7 +30,7 @@
                 <div class="headerContainer">
                     <div class="row">
                         <div class="col-xl-15 mx-auto position-relative">
-                            <h1 class="mb-5">Welcome to JoinGym</h1>
+                            <h1 class="titleText">Welcome to JoinGym</h1>
                             <h2>Below are a list of Gyms that you are able to join!</h2>
                             <br>
                             <h3 class="smallWords">Select each gym and explore what each gym group has to offer!</h3>
@@ -48,8 +51,18 @@
             margin-left: 80px;
             display: flex;
             width: 1200px;
+            font-family: 'Oswald', sans-serif;
+
             
 
+        }
+
+        .titleText{
+            font-size: 55px;
+            width:400px;
+            margin-left: 60px;
+            border-radius: 15px;
+            background: #F55C57;
         }
 
         .groupGymimg{
@@ -63,13 +76,10 @@
 
         .smallWords{
             font-size: 17px;
+
         }
 
-        .mb-5{
-            font-size: 55px;
-            padding-top: 15px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
+        
 
         .masthead{
 
@@ -82,7 +92,13 @@
             margin: auto;
             width: 500px;
             height: 450px;
-            padding-bottom: 20px;
+            font-family: 'Oswald', sans-serif;
+            padding-top: 15px;
+
+        }
+
+        .headerContainer h2{
+            padding: 38px;
         }
 
         .Cardcontainer{
@@ -110,11 +126,15 @@
 
         .gymCardHome h2 {
             padding: 10px;
+            font-family: 'Oswald', sans-serif;
+
         }
         
         .gymCardHome p {
-            padding: 4px;
-            font-size: 15px;
+            padding: 6px;
+            font-size: 20px;
+            font-family: 'Oswald', sans-serif;
+
         }
 
         .gymCardHome a {
@@ -126,6 +146,8 @@
             text-align: center;
             margin: 65px 65px;
             text-decoration: none;
+            font-family: 'Oswald', sans-serif;
+
         }
 
         .gymCardHome:hover{
@@ -142,7 +164,27 @@
 
        
 
+        .gymDisplayHome-image {
+            margin-left: 40px;
+            padding-top: 105px;
+            height: 800px;
+            width: 95%;
+            margin-bottom: 15px;
+            background-size: cover;
+            border-radius: 15px 15px 0 0;
 
+        }
+
+        .gym1DisplayContainer{
+            text-align: center;
+            color: #041137;
+            background-color: #A9A9A9;
+            margin: auto;
+            width: 500px;
+            height: 450px;
+            font-family: 'Oswald', sans-serif;
+            padding-top: 45px;
+        }
 
 
         .gym-1 {
@@ -171,7 +213,7 @@
         <div class="gymCardHome">
             <div class="gymCardHome-image gym-2"></div>
             <h2>Gym 2</h2>
-            <p>This gym is great for cross-fit athletes looking to improve athletic performance. Sports are a huge aspect of others. Find others like you</p>
+            <p>This gym is great for cross-fit athletes looking to improve athletic performance. Find others like you</p>
             <a href="gymPage2" >Join Gym 2</a>
 
         </div>
@@ -203,6 +245,22 @@
         </div>
 
         <div class="gym1InfoBody">
+            <div class="gymDisplayHome-image gym-1">
+                <div class="gym1DisplayContainer">
+                    <div class="row">
+                        <div class="col-xl-15 mx-auto position-relative">
+                            <h1 class="titleText">Welcome to JoinGym</h1>
+                            <h2>Below are a list of Gyms that you are able to join!</h2>
+                            <br>
+                            <h3 class="smallWords">Select each gym and explore what each gym group has to offer!</h3>
+
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
 
         </div>
     </section>

@@ -30,7 +30,7 @@
                 <div class="headerContainer">
                     <div class="row">
                         <div class="col-xl-15 mx-auto position-relative">
-                            <h1 class="mb-5">Welcome to Gym Number 1</h1>
+                            <h1 class="mb-5">Welcome to Gym Number 2</h1>
                             <h2>Below are a list of members that you are able to connect with!</h2>
                             <br>
                             <h3 class="smallWords">Select a user below and view their profile and see if they are a good match!</h3>
@@ -58,7 +58,7 @@
         }
 
         .groupGymimg{
-            background-image: url('../images/gymBackground.jpeg');
+            background-image: url('../images/cross-fitGym.jpg');
             width: 500px;
             height: 450px;
             background-size: cover;
@@ -82,7 +82,7 @@
         .headerContainer{
             text-align: center;
             color: #041137;
-            background-color: #A9A9A9;
+            background-color: #c1cf9f;
             margin: auto;
             width: 550px;
             height: 450px;
@@ -97,7 +97,7 @@
         }
 
         .userCardHome  {
-            background-color: #F55C57;
+            background-color: #c1cf9f;
             width: 330px;
             height: 500px;
             margin: 10px;
@@ -137,7 +137,7 @@
         }
 
         .userCardHome:hover{
-            background-color: #A9A9A9;
+            background-color: #646266;
             color: white;
             cursor: pointer;
             transform:scale(1.02);
@@ -159,8 +159,8 @@
             background:#A9A9A9
         }
 
-        .gym-1 {
-            background-image: url('../images/gymBackground.jpeg')
+        .gym-2{
+            background-image: url('../images/cross-fitGym.jpg')
         }
 
     </style>
@@ -171,7 +171,7 @@
     <section class="Cardcontainer" display: flex;>
 
         <div class="userCardHome">
-            <div class="userCardHome-image gym-1"></div>
+            <div class="userCardHome-image gym-2"></div>
             <div class="profile"> <img src="../images/marioPFP.jpeg" class="rounded-circle" width="80"> </div>
                 <h2>User 1</h2>
                 <div class="userInfoBorder">
@@ -184,7 +184,7 @@
         </div>
         
         <div class="userCardHome">
-            <div class="userCardHome-image gym-1"></div>
+            <div class="userCardHome-image gym-2"></div>
             <div class="profile"> <img src="../images/marioPFP.jpeg" class="rounded-circle" width="80"> </div>
             <h2>User 1</h2>
             <div class="userInfoBorder">
@@ -197,7 +197,7 @@
 
 
         <div class="userCardHome">
-            <div class="userCardHome-image gym-1"></div>
+            <div class="userCardHome-image gym-2"></div>
             <div class="profile"> <img src="../images/marioPFP.jpeg" class="rounded-circle" width="80"> </div>
             <h2>User 1</h2>
             <div class="userInfoBorder">
@@ -209,7 +209,7 @@
         </div>
 
         <div class="userCardHome">
-            <div class="userCardHome-image gym-1"></div>
+            <div class="userCardHome-image gym-2"></div>
             <div class="profile"> <img src="../images/marioPFP.jpeg" class="rounded-circle" width="80"> </div>
             <h2>User 1</h2>
             <div class="userInfoBorder">
@@ -227,12 +227,10 @@
     <br>
     <br>
 
-    
-
     <section class="Cardcontainer" display: flex;>
 
         <div class="userCardHome">
-            <div class="userCardHome-image gym-1"></div>
+            <div class="userCardHome-image gym-2"></div>
             <div class="profile"> <img src="../images/marioPFP.jpeg" class="rounded-circle" width="80"> </div>
             <h2>User 1</h2>
             <div class="userInfoBorder">
@@ -244,7 +242,7 @@
         </div>
         
         <div class="userCardHome">
-            <div class="userCardHome-image gym-1"></div>
+            <div class="userCardHome-image gym-2"></div>
             <div class="profile"> <img src="../images/marioPFP.jpeg" class="rounded-circle" width="80"> </div>
             <h2>User 1</h2>
             <div class="userInfoBorder">
@@ -257,7 +255,7 @@
 
 
         <div class="userCardHome">
-            <div class="userCardHome-image gym-1"></div>
+            <div class="userCardHome-image gym-2"></div>
             <div class="profile"> <img src="../images/marioPFP.jpeg" class="rounded-circle" width="80"> </div>
             <h2>User 1</h2>
             <div class="userInfoBorder">
@@ -269,7 +267,7 @@
         </div>
 
         <div class="userCardHome">
-            <div class="userCardHome-image gym-1"></div>
+            <div class="userCardHome-image gym-2"></div>
             <div class="profile"> <img src="../images/marioPFP.jpeg" class="rounded-circle" width="80"> </div>
             <h2>User 1</h2>
             <div class="userInfoBorder">
@@ -310,7 +308,6 @@
 
 
 @endsection
-
 
 
 

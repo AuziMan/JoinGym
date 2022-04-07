@@ -157,7 +157,7 @@
                     <a href="home" >Find another Gym</a>
                 </div>
                 <div class="viewMembers">
-                    <a href="home" >Join Gym!</a>
+                    <a href="gym2UserPage" >Join Gym!</a>
                 </div>
             </ul>
         </div>

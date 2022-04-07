@@ -156,6 +156,16 @@ Route::get('/gym1UserPage', function()
     return view('/gympages/gym1UserPage');
 });
 
+Route::get('/gym2UserPage', function() 
+{
+    return view('/gympages/gym2UserPage');
+});
+
+Route::get('/gym3UserPage', function() 
+{
+    return view('/gympages/gym3UserPage');
+});
+
 
 
 //=======================Gym Routes========================
