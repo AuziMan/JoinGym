@@ -27,7 +27,7 @@
         border: none;
         border-radius: 15px;
         padding: 5px;
-        background-color: #fff;
+        background-color: #8B8789;
         position: relative;
         height: 300px;
         font-family: 'Oswald', sans-serif;
@@ -41,7 +41,7 @@
         border: none;
         border-radius: 15px;
         padding: 5px;
-        background-color: #fff;
+        background-color: #8B8789;
         position: relative;
         height: 300px;
         font-family: 'Oswald', sans-serif;
@@ -88,10 +88,7 @@
 
     }
 
-    
 
-
-    
     .upper {
         display: flex;
         justify-content: center;
@@ -144,19 +141,25 @@
         height: 35px;
     }
     
+    .stats h4 {
+        font-size: 20px;
+    }
+
     .stats span {
         font-size: 30px;
     }
 
     .stats{
-        padding: 5px;
-        margin-left: 20px;
+        width: 250px;
+        margin-right: 10px;
     }
 
     .statsContainer{
         border-radius: 15px;
         background-color:#F55C57;
     }
+
+
 
     
 .viewProfileBtn{

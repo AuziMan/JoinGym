@@ -75,8 +75,8 @@
         }
 
         .smallWords{
-            font-size: 17px;
-
+            font-size: 19px;
+            padding: 25px;
         }
 
         .midWords{
@@ -203,14 +203,14 @@
     <section class="Cardcontainer" display: flex;>
         <div class="gymCardHome">
             <div class="gymCardHome-image gym-1"></div>
-            <h2>Gym 1</h2>
+            <h2>Gym 1 || Beginner Gym</h2>
             <p>This gym is great for beginner lifters. Beginning a fitness jounry can be intimdating. Find others to support you!</p>
             <a href="gymPage1" >Join Gym 1</a>
         </div>
         
         <div class="gymCardHome">
             <div class="gymCardHome-image gym-2"></div>
-            <h2>Gym 2</h2>
+            <h2>Gym 2 || Athletics</h2>
             <p>This gym is great for cross-fit athletes looking to improve athletic performance. Find others like you</p>
             <a href="gymPage2" >Join Gym 2</a>
 
@@ -219,7 +219,7 @@
 
         <div class="gymCardHome">
             <div class="gymCardHome-image gym-3"></div>
-            <h2>Gym 3</h2>
+            <h2>Gym 3 || Body Building Central</h2>
             <p>This gym is great for body building. Gaining size along with stenth is a great way to stay motiviated!</p>
             <a href="gymPage3" >Join Gym 3</a>
 
@@ -228,19 +228,10 @@
 </div>
 
 
-    <style>
-        .showcaseTitle{
-            margin-top: 100px;
-            text-align: center;
-            border-style: dashed;
-        }
-
-    </style>
+    
 
     <section>
-        <div class="showcaseTitle">
-            <h1>Read a bit about each gym below!</h1>
-        </div>
+        
 
         <div class="gym1InfoBody">
             <div class="gymDisplayHome-image gym-1">
@@ -249,11 +240,12 @@
                         <div class="col-xl-15 mx-auto position-relative">
                             <h1 class="titleText">Beginner Gym</h1>
 
-                            <h2 class="midWords">Beginner Gym is the perfect gym subgroup for those that are new to 
+                            <h2 class="midWords"> The Beginner Gym is the perfect gym subgroup for those that are new to 
                                 the gym world.     
                             </h2>
                             <br>
-                            <h3 class="smallWords">Select each gym and explore what each gym group has to offer!</h3>
+                            <h3 class="smallWords">The Beginner Gym is a great sub-gym for individuals with little gym experience but eager to start their fitness jounry. 
+                                The majority of members are beginning their gym jounry with a few experienced members sprinkled in </h3>
 
                             <br>
                             <br>
@@ -269,15 +261,17 @@
         <br>
 
         <div class="gym1InfoBody">
-            <div class="gymDisplayHome-image gym-1">
+            <div class="gymDisplayHome-image gym-2">
                 <div class="gym1DisplayContainer">
                     <div class="row">
                         <div class="col-xl-15 mx-auto position-relative">
-                            <h1 class="titleText">Welcome to JoinGym</h1>
-                            <h2>Below are a list of Gyms that you are able to join!</h2>
+                            <h1 class="titleText">Athletics Gym</h1>
                             <br>
-                            <h3 class="smallWords">Select each gym and explore what each gym group has to offer!</h3>
-
+                            <h2>Athletics gym is the perfect spot for competitive athletes looking to get better in their sport.</h2>
+                            <br>
+                            <h3 class="smallWords">The Athlete gym is aimed at connecting athletes and crossfit gym go-ers together. 
+                                Athletes who are able to connect and compete with each other will have greater luck on the feild or court once the work is put in.
+                            </h3>
                             <br>
                             <br>
                         </div>
@@ -287,6 +281,26 @@
             </div>
 
         </div>
+
+        <div class="gym1InfoBody">
+            <div class="gymDisplayHome-image gym-3">
+                <div class="gym1DisplayContainer">
+                    <div class="row">
+                        <div class="col-xl-15 mx-auto position-relative">
+                            <h1 class="titleText">Body Building Central</h1>
+                            <br>
+                            <h2> Body Buidling Central is a great place for passionate gym members who are willing to commit to the gym</h2>
+                            <br>
+                            <h3 class="smallWords">Body Building Central is meant to connect passionate gym members who want to improve their body by building strength
+                                and size.  </h3>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
     
 

@@ -168,16 +168,75 @@
 <br>
 <br>
 
+<section class="Cardcontainer" display: flex;>
+
+    <div class="userCardHome">
+        <div class="userCardHome-image gym-2"></div>
+        <div class="profile"> <img src="../images/marioPFP.jpeg" class="rounded-circle" width="80"> </div>
+            <h2>Timmy</h2>
+            <div class="userInfoBorder">
+                <p>Gym Goals: Get stronger</p>
+                <p>Gym Experience: Less than one year</p>
+                <p>Workout Preference: With my friends</p>
+            </div>
+            <a href="gymPage1" >Connect!</a>
+
+    </div>
+    
+    <div class="userCardHome">
+        <div class="userCardHome-image gym-2"></div>
+        <div class="profile"> <img src="../images/marioPFP.jpeg" class="rounded-circle" width="80"> </div>
+        <h2>John</h2>
+        <div class="userInfoBorder">
+            <p>Gym Goals: Lose Weight</p>
+            <p>Gym Experience: Very new</p>
+            <p>Workout Preference: Alone</p>
+        </div>
+        <a href="gymPage1" >Connect!</a>
+    </div>
+
+
+    <div class="userCardHome">
+        <div class="userCardHome-image gym-2"></div>
+        <div class="profile"> <img src="../images/marioPFP.jpeg" class="rounded-circle" width="80"> </div>
+        <h2>Sarah</h2>
+        <div class="userInfoBorder">
+            <p>Gym Goals: Get strong</p>
+            <p>Gym Experience: Almost one year</p>
+            <p>Workout Preference: With other people</p>
+        </div>
+        <a href="gymPage1" >Connect!</a>
+    </div>
+
+    <div class="userCardHome">
+        <div class="userCardHome-image gym-2"></div>
+        <div class="profile"> <img src="../images/marioPFP.jpeg" class="rounded-circle" width="80"> </div>
+        <h2>Jeniffer</h2>
+        <div class="userInfoBorder">
+            <p>Gym Goals: Build Muscle</p>
+            <p>Gym Experience: 2 years</p>
+            <p>Workout Preference: With friends</p>
+        </div>
+        <a href="gymPage1" >Connect!</a>
+    </div>
+
+
+</section>
+
+    <br>
+    <br>
+    <br>
+
     <section class="Cardcontainer" display: flex;>
 
         <div class="userCardHome">
             <div class="userCardHome-image gym-2"></div>
             <div class="profile"> <img src="../images/marioPFP.jpeg" class="rounded-circle" width="80"> </div>
-                <h2>User 1</h2>
+                <h2>Timmy</h2>
                 <div class="userInfoBorder">
                     <p>Gym Goals: Get stronger</p>
                     <p>Gym Experience: Less than one year</p>
-                    <p>Workout Preference: Alone</p>
+                    <p>Workout Preference: With my friends</p>
                 </div>
                 <a href="gymPage1" >Connect!</a>
 
@@ -186,10 +245,10 @@
         <div class="userCardHome">
             <div class="userCardHome-image gym-2"></div>
             <div class="profile"> <img src="../images/marioPFP.jpeg" class="rounded-circle" width="80"> </div>
-            <h2>User 1</h2>
+            <h2>John</h2>
             <div class="userInfoBorder">
-                <p>Gym Goals: Get stronger</p>
-                <p>Gym Experience: Less than one year</p>
+                <p>Gym Goals: Lose Weight</p>
+                <p>Gym Experience: Very new</p>
                 <p>Workout Preference: Alone</p>
             </div>
             <a href="gymPage1" >Connect!</a>
@@ -199,11 +258,11 @@
         <div class="userCardHome">
             <div class="userCardHome-image gym-2"></div>
             <div class="profile"> <img src="../images/marioPFP.jpeg" class="rounded-circle" width="80"> </div>
-            <h2>User 1</h2>
+            <h2>Sarah</h2>
             <div class="userInfoBorder">
-                <p>Gym Goals: Get stronger</p>
-                <p>Gym Experience: Less than one year</p>
-                <p>Workout Preference: Alone</p>
+                <p>Gym Goals: Get strong</p>
+                <p>Gym Experience: Almost one year</p>
+                <p>Workout Preference: With other people</p>
             </div>
             <a href="gymPage1" >Connect!</a>
         </div>
@@ -211,69 +270,11 @@
         <div class="userCardHome">
             <div class="userCardHome-image gym-2"></div>
             <div class="profile"> <img src="../images/marioPFP.jpeg" class="rounded-circle" width="80"> </div>
-            <h2>User 1</h2>
+            <h2>Jeniffer</h2>
             <div class="userInfoBorder">
-                <p>Gym Goals: Get stronger</p>
-                <p>Gym Experience: Less than one year</p>
-                <p>Workout Preference: Alone</p>
-            </div>
-            <a href="gymPage1" >Connect!</a>
-        </div>
-
-
-    </section>
-
-    <br>
-    <br>
-    <br>
-
-    <section class="Cardcontainer" display: flex;>
-
-        <div class="userCardHome">
-            <div class="userCardHome-image gym-2"></div>
-            <div class="profile"> <img src="../images/marioPFP.jpeg" class="rounded-circle" width="80"> </div>
-            <h2>User 1</h2>
-            <div class="userInfoBorder">
-                <p>Gym Goals: Get stronger</p>
-                <p>Gym Experience: Less than one year</p>
-                <p>Workout Preference: Alone</p>
-            </div>
-            <a href="gymPage1" >Connect!</a>
-        </div>
-        
-        <div class="userCardHome">
-            <div class="userCardHome-image gym-2"></div>
-            <div class="profile"> <img src="../images/marioPFP.jpeg" class="rounded-circle" width="80"> </div>
-            <h2>User 1</h2>
-            <div class="userInfoBorder">
-                <p>Gym Goals: Get stronger</p>
-                <p>Gym Experience: Less than one year</p>
-                <p>Workout Preference: Alone</p>
-            </div>
-            <a href="gymPage1" >Connect!</a>
-        </div>
-
-
-        <div class="userCardHome">
-            <div class="userCardHome-image gym-2"></div>
-            <div class="profile"> <img src="../images/marioPFP.jpeg" class="rounded-circle" width="80"> </div>
-            <h2>User 1</h2>
-            <div class="userInfoBorder">
-                <p>Gym Goals: Get stronger</p>
-                <p>Gym Experience: Less than one year</p>
-                <p>Workout Preference: Alone</p>
-            </div>
-            <a href="gymPage1" >Connect!</a>
-        </div>
-
-        <div class="userCardHome">
-            <div class="userCardHome-image gym-2"></div>
-            <div class="profile"> <img src="../images/marioPFP.jpeg" class="rounded-circle" width="80"> </div>
-            <h2>User 1</h2>
-            <div class="userInfoBorder">
-                <p>Gym Goals: Get stronger</p>
-                <p>Gym Experience: Less than one year</p>
-                <p>Workout Preference: Alone</p>
+                <p>Gym Goals: Build Muscle</p>
+                <p>Gym Experience: 2 years</p>
+                <p>Workout Preference: With friends</p>
             </div>
             <a href="gymPage1" >Connect!</a>
         </div>

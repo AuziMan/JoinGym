@@ -29,7 +29,7 @@
             <div class="row">
                 <div class="col-xl-15 mx-auto position-relative">
                     <div class="gym1Header">    
-                        <h1 class="mb-5">Gym 1 || Beginners</h1>
+                        <h1 class="mb-5">Gym 1 || Beginners Gym</h1>
                         
                         <br>
                         <br>
@@ -46,7 +46,7 @@
     <style>
 
         .gym1Header{
-            width: 370px;
+            width: 400px;
             height: 100px;
             background-color: #353535;
             padding: 25px;
@@ -86,7 +86,7 @@
 
         .card h3 {
             text-align: center;
-            font-size: 25px;
+            font-size: 23px;
             color: #F55C57;
             padding: 15px;
         }
@@ -128,7 +128,7 @@
             background: white;
             margin: 100px 105px;
             border-radius: 15px;
-            height: 170px;
+            height: 190px;
         }
 
         .gym-1 {
@@ -146,8 +146,8 @@
                 <div class="textContainer">
                     <h2>Info about Gym 1 || Beginners</h2>
                     <h3>
-                        This gym is geared twords athlets and crossfit gym members. Improving athletic performance can imporve 
-                        confidence and the chances of gaining endorcements.
+                        The Beginner Gym is a great sub-gym for individuals with little gym experience but eager to start their fitness journey. 
+                                The majority of members are beginning their gym jounry with a few experienced members sprinkled in 
                     </h3>
                 </div>
                 <ul class="bottomButtons">

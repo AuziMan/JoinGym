@@ -174,9 +174,7 @@
 
 				</div>						
                         <a class="viewProfileBtn" href="userGymProfilePage">Add Profile</a>
-
-
-            </div>
+                </div>
 		</div>
 
 	</div>

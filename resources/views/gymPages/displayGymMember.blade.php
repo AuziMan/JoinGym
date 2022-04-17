@@ -17,32 +17,36 @@
 			</div>
 			<div class="mt-5 text-center">
 				<div class="profileName">
-					<h1 class="mb-3">Welcome back, {{ Auth::user()->name }}!</h1> <span class="text-muted d-block mb-2">
-					Below is your current profile. Feel free to update this!	
+					<h1 class="mb-3">Kyles Gym Profile</h1> <span class="text-muted d-block mb-2">
+                         
 					</span> 
 				</div>
-				<div class="statsContainer">	
+				<div class="UserstatsContainer">	
 
-				<div class="d-flex justify-content-between align-items-center mt-4 px-4">
+				    <div class="d-flex justify-content-between align-items-center mt-4 px-4">
 						<div class="stats">
-							<h3 class="mb-0">Gym Goals:</h3> <span>{{$gymProfile->getgymGoals()}}</span>
+							<h3 class="mb-0">Gym Goals:</h3> 
+                            <br>
+                            <h4>Get stronger</h4>
 						</div>
 						<div class="stats">
-							<h3 class="mb-0">Gym experience:</h3> <span>{{$gymProfile->getgymExperience()}}</span>
+							<h3 class="mb-0">Gym experience:</h3> 
+                            <br>
+                            <h4>2 years</h4>
 						</div>
 						<div class="stats">
-							<h3 class="mb-0">Workout Preference:</h3> <span>{{$gymProfile->getworkoutPrefrence()}}</span>
+							<h3 class="mb-0">Workout Preference:</h3> 
+                            <br>
+                            <h4>Someone new </h4>
 						</div>
 					</div>
 					
 				</div>
-						<form action="editUserGymProfile" method="post">
-							{{csrf_field()}}
-							<input class="viewProfileBtn" type="submit" value='Update' id="submit">
-
-						</form>
-
+						
+                        <br>
 						<a class="viewProfileBtn" href="home" >Return Home</a>
+                        <br>
+						<a class="viewProfileBtn" href="home" >Send friend request</a>
 
 
 
