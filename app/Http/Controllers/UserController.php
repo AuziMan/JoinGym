@@ -45,20 +45,6 @@ class UserController extends Controller
         
     }
 
-    public function apply(Request $request)
-    {
-    	$jobID = request()->get('id');
-    	
-    	$userID = Auth::user()->id;
-    	$exists = false;
-    	$bs = new JobListBS();
-    	
-    	$bs->apply($jobID, $userID);
-    	$job = $bs->getJob($jobID);
-	    $exists = $bs->isApplied($jobID, $userID);
-	    	    
-	    return View('/userPages/viewOneJob')->with('job', $job)->with('exists', $exists);
-    }
        
     //Adding user gym profile
     public function addUserGymProfile(Request $request)
@@ -81,6 +67,7 @@ class UserController extends Controller
        
     }
 
+    //Gets the gym profile and passeds it to the edit page
     public function editGymProfile(Request $request)
     {
         $id = Auth::user()->id;
@@ -114,7 +101,7 @@ class UserController extends Controller
         
     }
 
-
+    //Gets the Gym Profile and displays it to the displayUserGymProfile page
     public function displayUserGymProfile()
     {
         $id = Auth::user()->id;
@@ -146,34 +133,7 @@ class UserController extends Controller
         
         $profile = $bs->getUserProfile($id);
     }
-    
 
-
-    // User search job
-    public function searchJob(Request $request)
-    {
-    	$bs = new JobListBS();
-    	
-    	$searchTerm = request()->get('searchTerm');
-    	
-    	$jobs = $bs->searchJob($searchTerm);
-    	
-    	return View('/userPages/searchJobResults')->with('jobs', $jobs);
-    }
-
-
-    public function viewOneJob(Request $request)
-    {
-    	$id = request()->get('id');
-    	$userID = Auth::user()->id;
-    	$bs = new JobListBS();
-    	
-    	$job = $bs->getJob($id);
-    	
-    	$exists = $bs->isApplied($id, $userID);
-    	
-    	return View('/userPages/viewOneJob')->with('job', $job)->with('exists', $exists);
-    }
 
 
     

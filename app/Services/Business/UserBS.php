@@ -106,7 +106,8 @@ class UserBS
         return $this->service->getUserGymProfile($id);
     }
 
-    
+
+    //Gets all gyms from database
     public function getgyms($id)
     {
         // Instantiate UserDAO class

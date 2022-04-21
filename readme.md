@@ -33,7 +33,7 @@ ___
 
 
 
-## Somme non-functional requirments that I ensured would be present are:
+## Some non-functional requirments that I ensured would be present are:
 ___
 
 ### 1. A simple, yet satisfying front in that is easy to navigate
@@ -45,7 +45,11 @@ ___
 ***
 # JoinGym is currenly built utilizing PHP Laravel and Custom HTML+CSS which is connected to a relational database. 
 
-    My goal was to get a functional foundation built that I can then convert peice by peice over to a more robust tec-stack (React-Native). 
+    My goal was to get a functional foundation built that 
+    I can then convert peice by peice over 
+    to a more robust tec-stack (React-Native) 
+    once my skills are more widely formed. 
+
 
 ### Object oriented programming (OOP) was paired with the Model, View, Controller (MVC) Architeture to have a balenced separation of concers. This assisted in both the building and debugguing process of creating the application.
 
@@ -58,6 +62,40 @@ ___
 ___
 ***
 
+# Project Diagrams: 
+
+## High Level Design Diagram:
+
+
+<img src="images/HighLevelDesign.png" alt="drawing" width="500"/>
+
+## Like any application, JoinGym is split into three different parts: Front end, Backend/Database, and cloud structure. Currently, JoinGym's front end is built using all custom HTML+CSS using various recources. I wanted to build my end skills during this application and not relying on a front end framework helped me dive into raw HTML+CSS. 
+
+
+## The backend of JoinGym was build using PHP Laravel. I knew that I could build a functional application using PHP Laravel, and I have had a good experience building fullstack web applications utilizing Laravel. If I could go back and do it again, I would more than lekly choose to build JoinGym using a more modern fullstack framework such as React Native.
+
+
+
+## JoinGym is currently not hosted. Getting an application hosted that is not yet ready for a mass amount of users to use seems like a major waste of time to me with this project. I would rather get a more rubust version of the application built, tested and then hosted. Once hosting is a step I want to take, Heroku will be main first cloud hosting platform. I will implement hosting into JoinGym via a GitHub pipeline so I can have CI/CD functionality. The database will be used using ClearDB (An SQL service Heroku uses).
+
+***
+
+# Logicl Diagram:
+
+<img src="images/LogicalDiagram.png" alt="drawing" width="500"/>
+
+## The image above shows the high level logical flow of the application. We will start at the top and work our way down. 
+
+## The user will access JoinGym through a cloud hosting provider (most likely Heroku) which will take them directly into the presentation layer of the application., The presentation layer consists of all user and admin pages. This pages are currently built using custom HTML+CSS and minor bootstrap tools such as buttons. 
+
+## Buttons allow the user to interact with the business layer. For instance, the user will input their gym information, click submit, and this information is brought from the presentation layer, through the business layer, and placed into the MySql database. This separation allows for more security, and separation of concers, allowing for better organized code. 
+
+## When data is needed to be displayed on the presentation layer, the information is called through the data access object in the business layer and diplayed on the presentation layer for the user to view. 
+
+
+***
+___
+***
 
 # What I leaned:
 
@@ -70,7 +108,10 @@ ___
 
 
 ## Of course things changed along the way, but I truly belive that since I had such a structured plan in place, I made much farther progress than I would have if I had neglected the planning phase. 
+
 ***
 ___
 ***
+
+
 
