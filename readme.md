@@ -85,7 +85,7 @@ ___
 ___
 ***
 
-# What I leaned:
+# What I learned:
 
 ## Before beginning on JoinGym, I had some hands on experience with PHP Laravel. I knew I could get a functional application built without having to dive into a new technology and risk not completing an application within one semester.
 
