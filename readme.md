@@ -102,7 +102,7 @@ ___
 
 # Risks and Challenges:
 
-## For this capstone project my goal was to have as little risks as possible. Not passing this class meant not graduating on time, so I opted to take the safe route and stick with the familiar. Now this does not mean I didn't have risks or challenges, they were just manageable. My biggest 'risk' like most other students was the time crunch. building any full stack app can be a challenge, especially within one semester of college, while taking multiple other language classes. I was able to stay mostly on top on my tasks by writing out a task list specifically for JoinGym at the beginning of each week. I kept the project progression featured focused which allowed me to gauge my progress by how man features I had complete. 
+## For this capstone project my goal was to have as little risks as possible. Not passing this class meant not graduating on time, so I opted to take the safe route and stick with the familiar. Now this does not mean I didn't have risks or challenges, they were just manageable. My biggest 'risk' like most other students was the time crunch. Building any full stack app can be a challenge, especially within one semester of college, while taking multiple other language classes. I was able to stay mostly on top on my tasks by writing out a task list specifically for JoinGym at the beginning of each week. I kept the project progression featured focused which allowed me to gauge my progress by how man features I had complete. 
 
 ***
 ___
@@ -110,7 +110,7 @@ ___
 
 # Outstanding issues:
 
-## The only outstanding issue which was in scope was viewing individual gym profiles within specific sub-gyms. For whatever reason, I have had trouble getting th right information to display. I currently have a work around for this by manually entering users and then displaying their gym profiles. By doing this, it gives the feel that the application is functioning as planned until I get this issue figured out. I already have a plan on how to implement this in a different framework which I will be working towards shortly after graduation. 
+## The only outstanding issue which was in scope was viewing individual gym profiles within specific sub-gyms. For whatever reason, I have had trouble getting the right information to display. I currently have a work around for this by manually entering users and then displaying their gym profiles. By doing this, it gives the feel that the application is functioning as planned until I get this issue figured out. I already have a plan on how to implement this in a different framework which I will be working towards shortly after graduation. 
 
 ### The only other 'Issue' would be having the application cloud hosted. Hosting JoinGymn in its current state seems redundant as I am not ready to have a mass amount of users use the site quite yet.
 
