@@ -26,7 +26,6 @@ ___
 ### 4. Once a user finds another member that has similar goals, they are able to exchange socials and choose to workout together. 
 
 ---
-# Image of gyms here
 
 
 ## Some non-functional requirements that I ensured would be present are:
